@@ -7,10 +7,10 @@
 
 <hr />
 
-<strike><h3><a href="#" target="_blank">
+<h3><a href="https://paulb-h.github.io/qckcmd/" target="_blank">
 Live site
-</a></h3></strike>
+</a></h3>
 
-<h3><mark>UNDER CONSTRUCTION</mark></h3>
+<h3><mark>Up, but still WIP!</mark></h3>
 
 <hr />
