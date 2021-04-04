@@ -4,3 +4,21 @@
   box-sizing: border-box;
   outline: none;
 }
+
+body {
+  margin: 15px;
+  max-width: 600px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+BLOCKQUOTE {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
