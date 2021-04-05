@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>qckcmd</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
     <!-- highlight.js -->
     <link
       rel="stylesheet"
@@ -21,139 +23,192 @@
     <h1>Quick Commands</h1>
     <div>
 
-<hr />
+      <hr />
 
-<h1>VS Code</h1>
+      <h1>VS Code</h1>
 
-<p>Alt+B
-  <BLOCKQUOTE>
-    Opens current file in browser (with open in browser extension)
-  </BLOCKQUOTE>
-</p>
+      <p style="background-color: rgb(255, 255, 191);">! Note <br />
+      Cursor location determines scope when collapsing a single region or subregion<br />
+      <br />
+      ALL CAPS = user defined
+      </p><br />
 
-<p>Ctrl+Shift+[
-  <BLOCKQUOTE>
-    Fold (collapse) region | editor.fold
-  </BLOCKQUOTE>
-</p>
+      <pre><code class="md">Ctrl + `</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Show / hide integrated terminal
+        </BLOCKQUOTE>
+      </p>
 
-<p>Ctrl+Shift+]
-  <BLOCKQUOTE>
-    Unfold (uncollapse) region | editor.unfold
-  </BLOCKQUOTE>
-</p>
+      <pre><code class="md">Alt + B</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Opens current file in browser (with <a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank">this</a> extension)
+        </BLOCKQUOTE>
+      </p>
 
-<p style="background-color: rgb(255, 255, 191);">! Note <br />
-For the following commands, keep Ctrl held but press the other keys one after another!</p><br />
+      <pre><code class="md">Ctrl + Shift + [</code></pre>
 
-<p>Ctrl+K Ctrl+[
-  <BLOCKQUOTE>
-    Fold (collapse) all subregions | editor.foldRecursively
-  </BLOCKQUOTE>
-</p>
-   
-<p>Ctrl+K Ctrl+]
-  <BLOCKQUOTE>
-    Unfold (uncollapse) all subregions  | editor.unfoldRecursively
-  </BLOCKQUOTE>
-</p>
+      <p>
+        <BLOCKQUOTE>
+          Fold (collapse) region
+        </BLOCKQUOTE>
+      </p>
 
-<p>Ctrl+K Ctrl+0   
-  <BLOCKQUOTE>
-    Fold (collapse) all regions |  editor.foldAll
-  </BLOCKQUOTE>
-</p>
+      <pre><code class="md">Ctrl + Shift + ]</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Unfold (uncollapse) region
+        </BLOCKQUOTE>
+      </p>
 
-   
-<p>Ctrl+K Ctrl+J   
-  <BLOCKQUOTE>
-    Unfold (uncollapse) all regions |  editor.unfoldAll
-  </BLOCKQUOTE>
-</p>
+      <p style="background-color: rgb(255, 255, 191);">! Note <br />
+      For the following commands, keep Ctrl held but press the other keys one after another!</p><br />
 
 
+      <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Fold (collapse) all subregions
+        </BLOCKQUOTE>
+      </p>
+        
 
-<hr />
-
-<h1>Git</h1>
-
-git init
-
-<p>git add .
-  <BLOCKQUOTE>
-    Add all saved files to next commit
-  </BLOCKQUOTE>
-</p>
-
-<p>git add filepath/filename
-  <BLOCKQUOTE>
-    Add specific file(s) to next commit
-  </BLOCKQUOTE>
-</p>
-
-<p>git add -p
-  <BLOCKQUOTE>
-    Lets you submit chunks even within a certian file.<br />
-    You can also break up chunks into smaller parts, to a certain limit.
-  </BLOCKQUOTE>
-</p>
-
-<p>
-git commit -m "subject" -m "extended message"
-  <BLOCKQUOTE>
-    |----------------- Subject message this long only! -----------------|
-  </BLOCKQUOTE>
-</p>
-
-<hr />
-
-<h1>GitHub CLI</h1>
-gh repo create
-
-<hr />
-
-<h1>Heroku CLI</h1>
-heroku create
-
-<hr />
-
-<h1>SSH</h1>
-ssh username@ipaddress
-
-<h1>Ubuntu</h1>
-
-<!-- apt get update && apt get upgrade
-
-ls
-
-cd
-
-mkdir
-
-su
-  switch user
-
-adduser username
-
-usermod -aG sudo username
+      <pre><code class="md">Ctrl + K -> Ctrl + ]</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Unfold (uncollapse) all subregions
+        </BLOCKQUOTE>
+      </p>
 
 
-UFW
+      <pre><code class="md">Ctrl + K -> Ctrl + 0</code></pre>
+      <p> 
+        <BLOCKQUOTE>
+          Fold (collapse) all regions
+        </BLOCKQUOTE>
+      </p>
 
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw deny http
-sudo ufw allow ssh
-sudo ufw enable
+        
+      <pre><code class="md">Ctrl + K -> Ctrl + J</code></pre>
+      <p> 
+        <BLOCKQUOTE>
+          Unfold (uncollapse) all regions
+        </BLOCKQUOTE>
+      </p>
 
-sudo ufw status verbose
+      <hr />
 
-nodemon
-concurrently
-pm2
-nginx
- -->
-<hr />
+      <h1>Git</h1>
+
+      <pre><code class="md">git init</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Initializes a LOCAL git repository in the current dir
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git add .</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Add all saved files to next commit
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git add FILENAME</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Add specific file(s) to next commit<br />
+          Specify dir as DIR/DIR/FILENAME
+        </BLOCKQUOTE>
+      </p>
+
+
+      <pre><code class="md">git add -p</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Lets you submit chunks even within a certian file.<br />
+          You can also break up chunks into smaller parts, to a certain limit.
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          SUBJECT recommend character length = 50, max = 72. DETAILS put anything more.
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git push origin TARGET</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Pushes to specified remote, typically "main"
+        </BLOCKQUOTE>
+      </p>
+
+      <hr />
+
+      <h1>GitHub CLI</h1>
+
+      <pre><code class="md">gh repo create</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Creates a remote repo on GitHub, and initializes it as an active remote to push/pull
+        </BLOCKQUOTE>
+      </p>
+
+      <hr />
+
+      <h1>Heroku CLI</h1>
+
+      <pre><code class="md">heroku create appname</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Creates a heroku application. You may leave appname blank, and a random name will be used.
+        </BLOCKQUOTE>
+      </p>
+
+      <hr />
+
+      <h1>SSH</h1>
+      <pre><code class="md">ssh username@ipaddress</code></pre>
+
+      <!--
+      <h1>Ubuntu</h1>
+
+      apt get update && apt get upgrade
+
+      ls
+
+      cd
+
+      mkdir
+
+      su
+        switch user
+
+      adduser username
+
+      usermod -aG sudo username
+
+
+      UFW
+
+      sudo ufw default deny incoming
+      sudo ufw default allow outgoing
+      sudo ufw deny http
+      sudo ufw allow ssh
+      sudo ufw enable
+
+      sudo ufw status verbose
+
+      nodemon
+      concurrently
+      pm2
+      nginx
+      -->
+      <hr />
+
       <h1>Resources</h1>
       <hr />
       <a href="https://stackoverflow.com/questions/39718412/visual-studio-code-keyboard-shortcuts-expand-collapse-all" target="_blank">stackoverflow.com/questions/39718412</a>
