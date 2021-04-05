@@ -1,1 +1,2 @@
-console.log("Hello initial commit");
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
