@@ -233,7 +233,7 @@
 
       <hr />
 
-      <h1>UFW</h1>
+      <h1>Ubuntu UFW - Uncomplicated Firewall</h1>
 
       <pre><code class="md">sudo ufw default deny incomming</code></pre>
       <p>
@@ -242,14 +242,44 @@
         </BLOCKQUOTE>
       </p>
       
-      <!--
-      sudo ufw default deny incoming
-      sudo ufw default allow outgoing
-      sudo ufw deny http
-      sudo ufw allow ssh
-      sudo ufw enable
+      <pre><code class="md">sudo ufw default allow outgoing</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Allow all outgoing connections
+        </BLOCKQUOTE>
+      </p>
+      
+      <pre><code class="md">sudo ufw deny http</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Deny http connections
+        </BLOCKQUOTE>
+      </p>
+      
+      <pre><code class="md">sudo ufw allow ssh</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Allow SSH connections <br />
+          <strong>ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong>
+        </BLOCKQUOTE>
+      </p>
 
-      sudo ufw status verbose
+      <pre><code class="md">sudo ufw enable</code></pre>
+      <p>
+          <BLOCKQUOTE>
+            Enable UFW<br />
+            <strong>ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER SSH</strong>
+          </BLOCKQUOTE>
+       </p>
+      
+      <pre><code class="md">sudo ufw status verbose</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Display detailed UFW status
+        </BLOCKQUOTE>
+      </p>
+      
+      <!--
 
       nodemon
       concurrently
