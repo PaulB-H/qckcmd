@@ -23,3 +23,8 @@ BLOCKQUOTE {
   margin-left: 20px;
   margin-bottom: 20px;
 }
+
+.md-link {
+  /* Override for .hlsj from highlight.js */
+  background: #ccc !important;
+}
