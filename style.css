@@ -23,6 +23,10 @@ h5 {
   margin: 10px 20px;
 }
 
+code {
+  white-space: break-spaces;
+}
+
 pre {
   margin: 10px 0;
 }
