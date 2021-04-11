@@ -36,3 +36,7 @@ BLOCKQUOTE {
   /* Override for .hlsj from highlight.js */
   background: #ccc !important;
 }
+
+.nohljsln .hljs-ln-numbers {
+  display: none;
+}
