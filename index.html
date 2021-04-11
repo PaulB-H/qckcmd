@@ -132,13 +132,28 @@
       </p>
 
 
-      <pre><code class="md">git add -p</code></pre>
+      <pre><code class="md nohljsln">git add -p
+ -- -- -- --
+(1/10) Stage this hunk [y,n,q,a,d,j,J,g,/,s,e,?]? ?
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help</code></pre>
       <p>
         <BLOCKQUOTE>
           Lets you submit chunks even within a certain file.<br />
           You can also break up chunks into smaller parts, to a certain limit.
         </BLOCKQUOTE>
       </p>
+      
 
       <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
       <p>
