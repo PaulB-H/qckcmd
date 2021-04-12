@@ -176,6 +176,27 @@ e - manually edit the current hunk
         </BLOCKQUOTE>
       </p>
 
+      <pre><code class="md">git reset HEAD~1</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Locally remove last commit, un-stage all changes.
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git reset --soft HEAD~1</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Locally remove last commit, changes remain staged.
+        </BLOCKQUOTE>
+      </p>
+
+      <pre><code class="md">git reset --hard HEAD~1</code></pre>
+      <p>
+        <BLOCKQUOTE>
+          Locally remove last commit, <strong style="background: rgb(255, 187, 187);">DELETE</strong> any changes.
+        </BLOCKQUOTE>
+      </p>
+
       <hr />
 
       <h2>GitHub CLI</h2>
