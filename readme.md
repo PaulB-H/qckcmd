@@ -7,10 +7,8 @@
 
 <hr />
 
-<h3><a href="https://paulb-h.github.io/qckcmd/" target="_blank">
-Live site
+<h3><a href="https://www.qckcmd.com" target="_blank">
+Live site - www.qckcmd.com
 </a></h3>
-
-<h3><mark>Up, but still WIP!</mark></h3>
 
 <hr />
