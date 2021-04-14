@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <title>qckcmd</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
     <!-- highlight.js -->
     <link
       rel="stylesheet"
@@ -17,11 +20,13 @@
     />
     <!-- Local CSS -->
     <link rel="stylesheet" href="./style.css" />
-    
   </head>
   <body>
     <h1>Quick Commands</h1>
-    <p>A personal reference guide for commands, and collection of favorite open-source software / resources.</p>
+    <p>
+      A personal reference guide for commands, and collection of favorite
+      open-source software / resources.
+    </p>
 
     <br />
 
@@ -30,107 +35,77 @@
     <br />
 
     <div>
-
       <hr />
 
-      <h2>VS Code</h2>
+      <div>
+        <h2>VS Code</h2>
 
-      <p style="background-color: rgb(255, 255, 191);">! Note <br />
-      Cursor location determines scope when collapsing a single region or subregion<br />
-      <br />
-      ALL CAPS = user defined
-      </p><br />
+        <p style="background-color: rgb(255, 255, 191)">
+          ! Note <br />
+          Cursor location determines scope when collapsing a single region or
+          subregion<br />
+          <br />
+          ALL CAPS = user defined
+        </p>
+        <br />
 
-      <pre><code class="md">Ctrl + `</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Show / hide integrated terminal
-        </BLOCKQUOTE>
-      </p>
+        <pre><code class="md">Ctrl + `</code></pre>
+        <blockquote>Show / hide integrated terminal</blockquote>
 
-      <pre><code class="md">Alt + B</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Opens current file in browser (with <a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank">this</a> extension)
-        </BLOCKQUOTE>
-      </p>
+        <pre><code class="md">Alt + B</code></pre>
+        <blockquote>
+          Opens current file in browser (with
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser"
+            target="_blank"
+            >this</a
+          >
+          extension)
+        </blockquote>
 
-      <pre><code class="md">Ctrl + Shift + [</code></pre>
+        <pre><code class="md">Ctrl + Shift + [</code></pre>
+        <blockquote>Fold (collapse) region</blockquote>
 
-      <p>
-        <BLOCKQUOTE>
-          Fold (collapse) region
-        </BLOCKQUOTE>
-      </p>
+        <pre><code class="md">Ctrl + Shift + ]</code></pre>
+        <blockquote>Unfold (uncollapse) region</blockquote>
 
-      <pre><code class="md">Ctrl + Shift + ]</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Unfold (uncollapse) region
-        </BLOCKQUOTE>
-      </p>
+        <p style="background-color: rgb(255, 255, 191)">
+          ! Note <br />
+          For the following commands, keep Ctrl held but press the other keys
+          one after another!
+        </p>
+        <br />
 
-      <p style="background-color: rgb(255, 255, 191);">! Note <br />
-      For the following commands, keep Ctrl held but press the other keys one after another!</p><br />
+        <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
+        <blockquote>Fold (collapse) all subregions</blockquote>
 
+        <pre><code class="md">Ctrl + K -> Ctrl + ]</code></pre>
+        <blockquote>Unfold (uncollapse) all subregions</blockquote>
 
-      <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Fold (collapse) all subregions
-        </BLOCKQUOTE>
-      </p>
-        
+        <pre><code class="md">Ctrl + K -> Ctrl + 0</code></pre>
+        <blockquote>Fold (collapse) all regions</blockquote>
 
-      <pre><code class="md">Ctrl + K -> Ctrl + ]</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Unfold (uncollapse) all subregions
-        </BLOCKQUOTE>
-      </p>
-
-
-      <pre><code class="md">Ctrl + K -> Ctrl + 0</code></pre>
-      <p> 
-        <BLOCKQUOTE>
-          Fold (collapse) all regions
-        </BLOCKQUOTE>
-      </p>
-
-        
-      <pre><code class="md">Ctrl + K -> Ctrl + J</code></pre>
-      <p> 
-        <BLOCKQUOTE>
-          Unfold (uncollapse) all regions
-        </BLOCKQUOTE>
-      </p>
+        <pre><code class="md">Ctrl + K -> Ctrl + J</code></pre>
+        <blockquote>Unfold (uncollapse) all regions</blockquote>
+      </div>
 
       <hr />
 
       <h2>Git</h2>
 
       <pre><code class="md">git init</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Initializes a LOCAL git repository in the current dir
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Initializes a LOCAL git repository in the current dir
+      </blockquote>
 
       <pre><code class="md">git add .</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Stage all saved files for next commit
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Stage all saved files for next commit</blockquote>
 
       <pre><code class="md">git add FILENAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Stage specific file(s) for next commit<br />
-          Specify dir as DIR/DIR/FILENAME
-        </BLOCKQUOTE>
-      </p>
-
+      <blockquote>
+        Stage specific file(s) for next commit<br />
+        Specify dir as DIR/DIR/FILENAME
+      </blockquote>
 
       <pre><code class="md nohljsln">git add -p
  -- -- -- --
@@ -147,245 +122,161 @@ J - leave this hunk undecided, see next hunk
 <strong style="font-size: 110%;">s - split the current hunk into smaller hunks</strong>
 e - manually edit the current hunk
 ? - print help</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Add to staging specific hunks from within a file(s)<br />
-          You can also split the hunks into smaller parts
-        </BLOCKQUOTE>
-      </p>
-      
+      <blockquote>
+        Add to staging specific hunks from within a file(s)<br />
+        You can also split the hunks into smaller parts
+      </blockquote>
 
       <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          SUBJECT recommend character length = 50, max = 72. DETAILS put anything more.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        SUBJECT recommend character length = 50, max = 72. DETAILS put anything
+        more.
+      </blockquote>
 
       <pre><code class="md">git push origin TARGET</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Pushes to specified remote, typically "main"
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Pushes to specified remote, typically "main"</blockquote>
 
       <pre><code class="md">git reset</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Remove from staging anything that has not been committed.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Remove from staging anything that has not been committed.
+      </blockquote>
 
       <pre><code class="md">git reset HEAD~1</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Locally remove last commit, un-stage all changes.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Locally remove last commit, un-stage all changes.</blockquote>
 
       <pre><code class="md">git reset --soft HEAD~1</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Locally remove last commit, changes remain staged.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Locally remove last commit, changes remain staged.
+      </blockquote>
 
       <pre><code class="md">git reset --hard HEAD~1</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Locally remove last commit, <strong style="background: rgb(255, 187, 187);">DELETE</strong> any changes.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Locally remove last commit,
+        <strong style="background: rgb(255, 187, 187)">DELETE</strong> any
+        changes.
+      </blockquote>
 
       <hr />
 
       <h2>GitHub CLI</h2>
 
       <pre><code class="md">gh repo create</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Creates a remote repo on GitHub, and initializes it as an active remote to push/pull
-        </BLOCKQUOTE>
-      </p>
-
+      <blockquote>
+        Creates a remote repo on GitHub, and initializes it as an active remote
+        to push/pull
+      </blockquote>
       <hr />
 
       <h2>Heroku CLI</h2>
 
       <pre><code class="md">heroku create appname</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Creates a heroku application. You may leave appname blank, and a random name will be used.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Creates a heroku application. You may leave appname blank, and a random
+        name will be used.
+      </blockquote>
 
       <pre><code class="md">heroku apps:rename NEWNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Renames an app.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Renames an app.</blockquote>
 
       <pre><code class="md">git remote rm heroku<br />heroku git:remote -a NEWNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Update remote details in other repo's after renaming from another location. Use the NEWNAME that was set for the repo.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Update remote details in other repo's after renaming from another
+        location. Use the NEWNAME that was set for the repo.
+      </blockquote>
 
       <hr />
 
       <h2>SSH</h2>
       <pre><code class="md">ssh USERNAME@IPADDRESS</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Open SSH connection to target IP as USERNAME
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Open SSH connection to target IP as USERNAME</blockquote>
 
       <hr />
 
       <h2>Ubuntu</h2>
 
       <pre><code class="md">apt-get update && apt-get upgrade</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Download current package information<br />&& install available upgrades
-        </BLOCKQUOTE>
-      </p>
-      
+      <blockquote>
+        Download current package information<br />&& install available upgrades
+      </blockquote>
+
       <pre><code class="md">ls</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          List files in current dir
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>List files in current dir</blockquote>
 
       <pre><code class="md">cd TARGET</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Change directory 
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Change directory</blockquote>
 
       <pre><code class="md">mkdir DIRNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Create directory
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Create directory</blockquote>
 
       <pre><code class="md">adduser USERNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Create user
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Create user</blockquote>
 
       <pre><code class="md">su USERNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Switch user
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Switch user</blockquote>
 
       <pre><code class="md">usermod -aG sudo USERNAME</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Grant user sudo permission
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Grant user sudo permission</blockquote>
 
       <hr />
 
       <h2>Ubuntu<br />unattended-upgrades</h2>
 
       <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Install unattended-upgrades package.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Install unattended-upgrades package.</blockquote>
 
       <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Enable unattended-upgrades to automatically install security updates.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Enable unattended-upgrades to automatically install security updates.
+      </blockquote>
 
       <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
-      <sup>
-        <BLOCKQUOTE>
-          Link to docs
-        </BLOCKQUOTE>
-      </sup>
+      <blockquote>Link to docs</blockquote>
 
       <hr />
 
       <h2>Ubuntu UFW<br />Uncomplicated Firewall</h2>
 
       <pre><code class="md">sudo ufw default deny incoming</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Deny all incoming connections
-        </BLOCKQUOTE>
-      </p>
-      
+      <blockquote>Deny all incoming connections</blockquote>
+
       <pre><code class="md">sudo ufw default allow outgoing</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Allow all outgoing connections
-        </BLOCKQUOTE>
-      </p>
-      
+      <blockquote>Allow all outgoing connections</blockquote>
+
       <pre><code class="md">sudo ufw deny http</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Deny http connections
-        </BLOCKQUOTE>
-      </p>
-      
+      <blockquote>Deny http connections</blockquote>
+
       <pre><code class="md">sudo ufw allow ssh</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Allow SSH connections <br />
-          <strong style="background-color: rgb(255, 255, 191);">ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong>
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Allow SSH connections <br />
+        <strong style="background-color: rgb(255, 255, 191)"
+          >ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong
+        >
+      </blockquote>
 
       <pre><code class="md">sudo ufw enable</code></pre>
-      <p>
-          <BLOCKQUOTE>
-            Enable UFW<br />
-            <strong style="background-color: rgb(255, 255, 191);">ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER SSH</strong>
-          </BLOCKQUOTE>
-       </p>
-      
+      <blockquote>
+        Enable UFW<br />
+        <strong style="background-color: rgb(255, 255, 191)"
+          >ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER
+          SSH</strong
+        >
+      </blockquote>
+
       <pre><code class="md">sudo ufw status verbose</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Display detailed UFW status
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Display detailed UFW status</blockquote>
 
       <hr />
 
       <h2>NGINX</h2>
 
       <pre><code class="md">ln -s /etc/nginx/sites-available/EXAMPLE.CONF /etc/nginx/sites-enabled/</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Create symbolic link from specified file as EXAMPLE.CONF into dir at /etc/nginx/sites-enabled/
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Create symbolic link from specified file as EXAMPLE.CONF into dir at
+        /etc/nginx/sites-enabled/
+      </blockquote>
 
       <pre><code class="md">sudo systemctl restart nginx</code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Restart NGINX
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Restart NGINX</blockquote>
 
       <!--
 
@@ -399,84 +290,76 @@ e - manually edit the current hunk
       <h2>Favorite Packages / Libraries</h2>
 
       <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Syntax highlighting for the Web.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Syntax highlighting for the Web.</blockquote>
 
       <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Making the web more beautiful, fast, and open through great typography.
-        </BLOCKQUOTE>
-      </p>
-
+      <blockquote>
+        Making the web more beautiful, fast, and open through great typography.
+      </blockquote>
       <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Elegant, responsive, flexible and lightweight notification plugin with no dependencies. by Marcelo Dolza.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        Elegant, responsive, flexible and lightweight notification plugin with
+        no dependencies. by Marcelo Dolza.
+      </blockquote>
 
       <hr />
 
       <h2>VS Code Extensions</h2>
 
       <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          A basic spell checker that works well with camelCase code.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        A basic spell checker that works well with camelCase code.
+      </blockquote>
 
       <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          This extension allows matching brackets to be identified with colours.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        This extension allows matching brackets to be identified with colours.
+      </blockquote>
 
       <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          JavaScript and React/Redux snippets in ES7+ with Babel plugin features for VS Code.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        JavaScript and React/Redux snippets in ES7+ with Babel plugin features
+        for VS Code.
+      </blockquote>
 
       <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          Prettier is an opinionated code formatter.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>Prettier is an opinionated code formatter.</blockquote>
 
       <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
-      <p>
-        <BLOCKQUOTE>
-          This allows you to open the current file in your default browser or application.
-        </BLOCKQUOTE>
-      </p>
+      <blockquote>
+        This allows you to open the current file in your default browser or
+        application.
+      </blockquote>
 
       <!-- PACKAGE TEMPLATE -->
       <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
-      <p>
         <BLOCKQUOTE>
           What package does<br />
           <strong style="background-color: rgb(255, 255, 191);">Important package note</strong>
         </BLOCKQUOTE>
-      </p> -->
+      -->
       <!-- END PACKAGE TEMPLATE -->
 
       <hr />
-    
-      <h2>Resources</h2>
-      <a href="https://stackoverflow.com/questions/39718412/visual-studio-code-keyboard-shortcuts-expand-collapse-all" target="_blank">stackoverflow.com/questions/39718412</a>
-      <br />
-      <a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank">visualstudio.com/docs/getstarted/keybindings</a>
-      <br />
-      <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf</a>
 
+      <h2>Resources</h2>
+      <a
+        href="https://stackoverflow.com/questions/39718412/visual-studio-code-keyboard-shortcuts-expand-collapse-all"
+        target="_blank"
+        >stackoverflow.com/questions/39718412</a
+      >
+      <br />
+      <a
+        href="https://code.visualstudio.com/docs/getstarted/keybindings"
+        target="_blank"
+        >visualstudio.com/docs/getstarted/keybindings</a
+      >
+      <br />
+      <a
+        href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
+        target="_blank"
+        >visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf</a
+      >
     </div>
     <!-- Highlight.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
