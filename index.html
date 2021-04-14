@@ -37,7 +37,7 @@
     <div>
       <hr />
 
-      <div>
+      <div id="vscode">
         <h2>VS Code</h2>
 
         <p style="background-color: rgb(255, 255, 191)">
@@ -91,23 +91,24 @@
 
       <hr />
 
-      <h2>Git</h2>
+      <div id="git">
+        <h2>Git</h2>
 
-      <pre><code class="md">git init</code></pre>
-      <blockquote>
-        Initializes a LOCAL git repository in the current dir
-      </blockquote>
+        <pre><code class="md">git init</code></pre>
+        <blockquote>
+          Initializes a LOCAL git repository in the current dir
+        </blockquote>
 
-      <pre><code class="md">git add .</code></pre>
-      <blockquote>Stage all saved files for next commit</blockquote>
+        <pre><code class="md">git add .</code></pre>
+        <blockquote>Stage all saved files for next commit</blockquote>
 
-      <pre><code class="md">git add FILENAME</code></pre>
-      <blockquote>
-        Stage specific file(s) for next commit<br />
-        Specify dir as DIR/DIR/FILENAME
-      </blockquote>
+        <pre><code class="md">git add FILENAME</code></pre>
+        <blockquote>
+          Stage specific file(s) for next commit<br />
+          Specify dir as DIR/DIR/FILENAME
+        </blockquote>
 
-      <pre><code class="md nohljsln">git add -p
+        <pre><code class="md nohljsln">git add -p
  -- -- -- --
 (1/10) Stage this hunk [y,n,q,a,d,j,J,g,/,s,e,?]? ?
 y - stage this hunk
@@ -122,214 +123,237 @@ J - leave this hunk undecided, see next hunk
 <strong style="font-size: 110%;">s - split the current hunk into smaller hunks</strong>
 e - manually edit the current hunk
 ? - print help</code></pre>
-      <blockquote>
-        Add to staging specific hunks from within a file(s)<br />
-        You can also split the hunks into smaller parts
-      </blockquote>
+        <blockquote>
+          Add to staging specific hunks from within a file(s)<br />
+          You can also split the hunks into smaller parts
+        </blockquote>
 
-      <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
-      <blockquote>
-        SUBJECT recommend character length = 50, max = 72. DETAILS put anything
-        more.
-      </blockquote>
+        <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
+        <blockquote>
+          SUBJECT recommend character length = 50, max = 72. DETAILS put
+          anything more.
+        </blockquote>
 
-      <pre><code class="md">git push origin TARGET</code></pre>
-      <blockquote>Pushes to specified remote, typically "main"</blockquote>
+        <pre><code class="md">git push origin TARGET</code></pre>
+        <blockquote>Pushes to specified remote, typically "main"</blockquote>
 
-      <pre><code class="md">git reset</code></pre>
-      <blockquote>
-        Remove from staging anything that has not been committed.
-      </blockquote>
+        <pre><code class="md">git reset</code></pre>
+        <blockquote>
+          Remove from staging anything that has not been committed.
+        </blockquote>
 
-      <pre><code class="md">git reset HEAD~1</code></pre>
-      <blockquote>Locally remove last commit, un-stage all changes.</blockquote>
+        <pre><code class="md">git reset HEAD~1</code></pre>
+        <blockquote>
+          Locally remove last commit, un-stage all changes.
+        </blockquote>
 
-      <pre><code class="md">git reset --soft HEAD~1</code></pre>
-      <blockquote>
-        Locally remove last commit, changes remain staged.
-      </blockquote>
+        <pre><code class="md">git reset --soft HEAD~1</code></pre>
+        <blockquote>
+          Locally remove last commit, changes remain staged.
+        </blockquote>
 
-      <pre><code class="md">git reset --hard HEAD~1</code></pre>
-      <blockquote>
-        Locally remove last commit,
-        <strong style="background: rgb(255, 187, 187)">DELETE</strong> any
-        changes.
-      </blockquote>
-
-      <hr />
-
-      <h2>GitHub CLI</h2>
-
-      <pre><code class="md">gh repo create</code></pre>
-      <blockquote>
-        Creates a remote repo on GitHub, and initializes it as an active remote
-        to push/pull
-      </blockquote>
-      <hr />
-
-      <h2>Heroku CLI</h2>
-
-      <pre><code class="md">heroku create appname</code></pre>
-      <blockquote>
-        Creates a heroku application. You may leave appname blank, and a random
-        name will be used.
-      </blockquote>
-
-      <pre><code class="md">heroku apps:rename NEWNAME</code></pre>
-      <blockquote>Renames an app.</blockquote>
-
-      <pre><code class="md">git remote rm heroku<br />heroku git:remote -a NEWNAME</code></pre>
-      <blockquote>
-        Update remote details in other repo's after renaming from another
-        location. Use the NEWNAME that was set for the repo.
-      </blockquote>
+        <pre><code class="md">git reset --hard HEAD~1</code></pre>
+        <blockquote>
+          Locally remove last commit,
+          <strong style="background: rgb(255, 187, 187)">DELETE</strong> any
+          changes.
+        </blockquote>
+      </div>
 
       <hr />
 
-      <h2>SSH</h2>
-      <pre><code class="md">ssh USERNAME@IPADDRESS</code></pre>
-      <blockquote>Open SSH connection to target IP as USERNAME</blockquote>
+      <div id="githubcli">
+        <h2>GitHub CLI</h2>
+
+        <pre><code class="md">gh repo create</code></pre>
+        <blockquote>
+          Creates a remote repo on GitHub, and initializes it as an active
+          remote to push/pull
+        </blockquote>
+      </div>
 
       <hr />
 
-      <h2>Ubuntu</h2>
+      <div id="herokucli">
+        <h2>Heroku CLI</h2>
 
-      <pre><code class="md">apt-get update && apt-get upgrade</code></pre>
-      <blockquote>
-        Download current package information<br />&& install available upgrades
-      </blockquote>
+        <pre><code class="md">heroku create appname</code></pre>
+        <blockquote>
+          Creates a heroku application. You may leave appname blank, and a
+          random name will be used.
+        </blockquote>
 
-      <pre><code class="md">ls</code></pre>
-      <blockquote>List files in current dir</blockquote>
+        <pre><code class="md">heroku apps:rename NEWNAME</code></pre>
+        <blockquote>Renames an app.</blockquote>
 
-      <pre><code class="md">cd TARGET</code></pre>
-      <blockquote>Change directory</blockquote>
-
-      <pre><code class="md">mkdir DIRNAME</code></pre>
-      <blockquote>Create directory</blockquote>
-
-      <pre><code class="md">adduser USERNAME</code></pre>
-      <blockquote>Create user</blockquote>
-
-      <pre><code class="md">su USERNAME</code></pre>
-      <blockquote>Switch user</blockquote>
-
-      <pre><code class="md">usermod -aG sudo USERNAME</code></pre>
-      <blockquote>Grant user sudo permission</blockquote>
+        <pre><code class="md">git remote rm heroku<br />heroku git:remote -a NEWNAME</code></pre>
+        <blockquote>
+          Update remote details in other repo's after renaming from another
+          location. Use the NEWNAME that was set for the repo.
+        </blockquote>
+      </div>
 
       <hr />
 
-      <h2>Ubuntu<br />unattended-upgrades</h2>
-
-      <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
-      <blockquote>Install unattended-upgrades package.</blockquote>
-
-      <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
-      <blockquote>
-        Enable unattended-upgrades to automatically install security updates.
-      </blockquote>
-
-      <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
-      <blockquote>Link to docs</blockquote>
+      <div id="ssh">
+        <h2>SSH</h2>
+        <pre><code class="md">ssh USERNAME@IPADDRESS</code></pre>
+        <blockquote>Open SSH connection to target IP as USERNAME</blockquote>
+      </div>
 
       <hr />
 
-      <h2>Ubuntu UFW<br />Uncomplicated Firewall</h2>
+      <div id="ubuntu">
+        <h2>Ubuntu</h2>
 
-      <pre><code class="md">sudo ufw default deny incoming</code></pre>
-      <blockquote>Deny all incoming connections</blockquote>
+        <pre><code class="md">apt-get update && apt-get upgrade</code></pre>
+        <blockquote>
+          Download current package information<br />&& install available
+          upgrades
+        </blockquote>
 
-      <pre><code class="md">sudo ufw default allow outgoing</code></pre>
-      <blockquote>Allow all outgoing connections</blockquote>
+        <pre><code class="md">ls</code></pre>
+        <blockquote>List files in current dir</blockquote>
 
-      <pre><code class="md">sudo ufw deny http</code></pre>
-      <blockquote>Deny http connections</blockquote>
+        <pre><code class="md">cd TARGET</code></pre>
+        <blockquote>Change directory</blockquote>
 
-      <pre><code class="md">sudo ufw allow ssh</code></pre>
-      <blockquote>
-        Allow SSH connections <br />
-        <strong style="background-color: rgb(255, 255, 191)"
-          >ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong
-        >
-      </blockquote>
+        <pre><code class="md">mkdir DIRNAME</code></pre>
+        <blockquote>Create directory</blockquote>
 
-      <pre><code class="md">sudo ufw enable</code></pre>
-      <blockquote>
-        Enable UFW<br />
-        <strong style="background-color: rgb(255, 255, 191)"
-          >ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER
-          SSH</strong
-        >
-      </blockquote>
+        <pre><code class="md">adduser USERNAME</code></pre>
+        <blockquote>Create user</blockquote>
 
-      <pre><code class="md">sudo ufw status verbose</code></pre>
-      <blockquote>Display detailed UFW status</blockquote>
+        <pre><code class="md">su USERNAME</code></pre>
+        <blockquote>Switch user</blockquote>
+
+        <pre><code class="md">usermod -aG sudo USERNAME</code></pre>
+        <blockquote>Grant user sudo permission</blockquote>
+
+        <hr />
+
+        <h2>Ubuntu<br />unattended-upgrades</h2>
+
+        <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
+        <blockquote>Install unattended-upgrades package.</blockquote>
+
+        <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
+        <blockquote>
+          Enable unattended-upgrades to automatically install security updates.
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
+        <blockquote>Link to docs</blockquote>
+
+        <hr />
+
+        <h2>Ubuntu UFW<br />Uncomplicated Firewall</h2>
+
+        <pre><code class="md">sudo ufw default deny incoming</code></pre>
+        <blockquote>Deny all incoming connections</blockquote>
+
+        <pre><code class="md">sudo ufw default allow outgoing</code></pre>
+        <blockquote>Allow all outgoing connections</blockquote>
+
+        <pre><code class="md">sudo ufw deny http</code></pre>
+        <blockquote>Deny http connections</blockquote>
+
+        <pre><code class="md">sudo ufw allow ssh</code></pre>
+        <blockquote>
+          Allow SSH connections <br />
+          <strong style="background-color: rgb(255, 255, 191)"
+            >ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong
+          >
+        </blockquote>
+
+        <pre><code class="md">sudo ufw enable</code></pre>
+        <blockquote>
+          Enable UFW<br />
+          <strong style="background-color: rgb(255, 255, 191)"
+            >ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW
+            OVER SSH</strong
+          >
+        </blockquote>
+
+        <pre><code class="md">sudo ufw status verbose</code></pre>
+        <blockquote>Display detailed UFW status</blockquote>
+      </div>
 
       <hr />
 
-      <h2>NGINX</h2>
+      <div id="nginx">
+        <h2>NGINX</h2>
 
-      <pre><code class="md">ln -s /etc/nginx/sites-available/EXAMPLE.CONF /etc/nginx/sites-enabled/</code></pre>
-      <blockquote>
-        Create symbolic link from specified file as EXAMPLE.CONF into dir at
-        /etc/nginx/sites-enabled/
-      </blockquote>
+        <pre><code class="md">ln -s /etc/nginx/sites-available/EXAMPLE.CONF /etc/nginx/sites-enabled/</code></pre>
+        <blockquote>
+          Create symbolic link from specified file as EXAMPLE.CONF into dir at
+          /etc/nginx/sites-enabled/
+        </blockquote>
 
-      <pre><code class="md">sudo systemctl restart nginx</code></pre>
-      <blockquote>Restart NGINX</blockquote>
+        <pre><code class="md">sudo systemctl restart nginx</code></pre>
+        <blockquote>Restart NGINX</blockquote>
+      </div>
 
       <!--
-
-      nodemon
-      concurrently
-      pm2
-      nginx -->
-
-      <hr />
-
-      <h2>Favorite Packages / Libraries</h2>
-
-      <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
-      <blockquote>Syntax highlighting for the Web.</blockquote>
-
-      <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
-      <blockquote>
-        Making the web more beautiful, fast, and open through great typography.
-      </blockquote>
-      <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
-      <blockquote>
-        Elegant, responsive, flexible and lightweight notification plugin with
-        no dependencies. by Marcelo Dolza.
-      </blockquote>
+        TO DO:
+        npm
+        nvm
+        node.js
+        nodemon
+        concurrently
+        pm2
+      -->
 
       <hr />
 
-      <h2>VS Code Extensions</h2>
+      <div id="favorites">
+        <h2>Favorite Packages / Libraries</h2>
 
-      <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
-      <blockquote>
-        A basic spell checker that works well with camelCase code.
-      </blockquote>
+        <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
+        <blockquote>Syntax highlighting for the Web.</blockquote>
 
-      <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
-      <blockquote>
-        This extension allows matching brackets to be identified with colours.
-      </blockquote>
+        <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
+        <blockquote>
+          Making the web more beautiful, fast, and open through great
+          typography.
+        </blockquote>
+        <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
+        <blockquote>
+          Elegant, responsive, flexible and lightweight notification plugin with
+          no dependencies. by Marcelo Dolza.
+        </blockquote>
+      </div>
 
-      <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
-      <blockquote>
-        JavaScript and React/Redux snippets in ES7+ with Babel plugin features
-        for VS Code.
-      </blockquote>
+      <hr />
 
-      <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
-      <blockquote>Prettier is an opinionated code formatter.</blockquote>
+      <div id="vscodeextensions">
+        <h2>VS Code Extensions</h2>
 
-      <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
-      <blockquote>
-        This allows you to open the current file in your default browser or
-        application.
-      </blockquote>
+        <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
+        <blockquote>
+          A basic spell checker that works well with camelCase code.
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
+        <blockquote>
+          This extension allows matching brackets to be identified with colours.
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
+        <blockquote>
+          JavaScript and React/Redux snippets in ES7+ with Babel plugin features
+          for VS Code.
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
+        <blockquote>Prettier is an opinionated code formatter.</blockquote>
+
+        <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
+        <blockquote>
+          This allows you to open the current file in your default browser or
+          application.
+        </blockquote>
+      </div>
 
       <!-- PACKAGE TEMPLATE -->
       <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
