@@ -30,3 +30,33 @@ const applyNightMode = () => {
 };
 
 applyNightMode();
+
+const revertNightMode = () => {
+  document.querySelector("html").style.backgroundColor = null;
+
+  document
+    .querySelectorAll("p, BLOCKQUOTE, h1, h2, h3, h4, h5")
+    .forEach((item) => {
+      item.style.color = null;
+    });
+
+  document.querySelectorAll("code").forEach((item) => {
+    item.style.backgroundColor = null;
+    item.style.color = null;
+  });
+
+  document.querySelectorAll(".notice").forEach((item) => {
+    item.style.color = null;
+  });
+
+  document.querySelectorAll("a").forEach((item) => {
+    item.style.padding = "3px";
+    item.style.background = "#ccc";
+  });
+
+  document.querySelectorAll("hr").forEach((item) => {
+    item.style.color = "black";
+  });
+};
+
+// revertNightMode();
