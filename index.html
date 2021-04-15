@@ -294,8 +294,22 @@ e - manually edit the current hunk
 
         <pre><code class="md">apt-get install fail2ban</code></pre>
         <blockquote>
-          Install fail2ban, the service automatically starts.
+          Install fail2ban, the service automatically starts.<br />Default
+          settings allow a baseline of security. View tutorial linked above for
+          advanced options.
         </blockquote>
+
+        <pre><code class="md">fail2ban-client help</code></pre>
+        <blockquote>List all commands.</blockquote>
+
+        <pre><code class="md">fail2ban-client status</code></pre>
+        <blockquote>gets the current status of the server.</blockquote>
+
+        <pre><code class="md">fail2ban-client start</code></pre>
+        <blockquote>Starts server and jails.</blockquote>
+
+        <pre><code class="md">fail2ban-client stop</code></pre>
+        <blockquote>Stops all jails and terminates server.</blockquote>
       </div>
 
       <hr />
