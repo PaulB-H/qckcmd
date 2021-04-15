@@ -33,7 +33,9 @@
       <br />
 
       <a href="https://github.com/PaulB-H" target="_blank">me, Paul B-H</a
-      ><br /><br />
+      ><br />
+
+      <p class="notice">ALLCAPS = user defined variable</p>
     </header>
 
     <main>
@@ -42,14 +44,10 @@
       <div id="vscode">
         <h2>VS Code</h2>
 
-        <p style="background-color: rgb(255, 255, 191)">
-          ! Note <br />
+        <p class="notice">
           Cursor location determines scope when collapsing a single region or
-          subregion<br />
-          <br />
-          ALL CAPS = user defined
+          subregion.
         </p>
-        <br />
 
         <pre><code class="md">Ctrl + `</code></pre>
         <blockquote>Show / hide integrated terminal</blockquote>
@@ -71,12 +69,10 @@
         <pre><code class="md">Ctrl + Shift + ]</code></pre>
         <blockquote>Unfold (uncollapse) region</blockquote>
 
-        <p style="background-color: rgb(255, 255, 191)">
-          ! Note <br />
+        <p class="notice">
           For the following commands, keep Ctrl held but press the other keys
-          one after another!
+          one after another.
         </p>
-        <br />
 
         <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
         <blockquote>Fold (collapse) all subregions</blockquote>
@@ -267,21 +263,17 @@ e - manually edit the current hunk
         <blockquote>Deny http connections</blockquote>
 
         <pre><code class="md">sudo ufw allow ssh</code></pre>
-        <blockquote>
-          Allow SSH connections <br />
-          <strong style="background-color: rgb(255, 255, 191)"
-            >ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH</strong
-          >
-        </blockquote>
+        <blockquote>Allow SSH connections</blockquote>
+        <p class="notice">
+          ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH
+        </p>
 
         <pre><code class="md">sudo ufw enable</code></pre>
-        <blockquote>
-          Enable UFW<br />
-          <strong style="background-color: rgb(255, 255, 191)"
-            >ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW
-            OVER SSH</strong
-          >
-        </blockquote>
+        <blockquote>Enable UFW</blockquote>
+        <p class="notice">
+          ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER
+          SSH
+        </p>
 
         <pre><code class="md">sudo ufw status verbose</code></pre>
         <blockquote>Display detailed UFW status</blockquote>

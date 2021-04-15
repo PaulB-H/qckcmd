@@ -32,8 +32,7 @@ pre {
 }
 
 BLOCKQUOTE {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .md-link {
@@ -43,4 +42,12 @@ BLOCKQUOTE {
 
 .nohljsln .hljs-ln-numbers {
   display: none;
+}
+
+.notice {
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(255, 255, 191);
+  font-weight: bold;
 }
