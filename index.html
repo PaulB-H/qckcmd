@@ -299,8 +299,17 @@ e - manually edit the current hunk
           SSH
         </p>
 
+        <pre><code class="md">sudo ufw delete RULE/"RULE SPLIT"</code></pre>
+        <blockquote>Delete a rule.</blockquote>
+
         <pre><code class="md">sudo ufw status verbose</code></pre>
         <blockquote>Display detailed UFW status</blockquote>
+
+        <pre><code class="md">ufw disable</code></pre>
+        <blockquote>turn off UFW without deleting rules.</blockquote>
+
+        <pre><code class="md">ufw reset</code></pre>
+        <blockquote>Turn off UFW and delete all rules.</blockquote>
       </div>
 
       <hr />
