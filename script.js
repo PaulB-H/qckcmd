@@ -60,3 +60,9 @@ const revertNightMode = () => {
 };
 
 // revertNightMode();
+
+const commandObject = {
+  vscodecommands: [
+    { command: "Ctrl + `", desc: "Show / hide integrated terminal" },
+  ],
+};
