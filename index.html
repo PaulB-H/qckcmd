@@ -388,10 +388,29 @@ e - manually edit the current hunk
           in their own section
         </p>
 
-        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
-        <blockquote>
-          Fast, unopinionated, minimalist web framework for node.
-        </blockquote>
+        <div id="express">
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
+            <blockquote>
+              Fast, unopinionated, minimalist web framework for node.
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+            <pre
+              style="margin-left: 40px"
+            ><code class="js">const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.json({ msg: "Welcome to the backend" }));
+app.listen(5000, () => console.log(`Server started on port ${5000}`));
+// run 'node server' then navigate to 'localhost:5000' in browser
+</code></pre>
+            <blockquote style="margin-left: 40px">
+              Most basic express server, sending a static JSON response.
+            </blockquote>
+          </div>
+        </div>
 
         <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
         <blockquote>An express.js middleware for validator</blockquote>
