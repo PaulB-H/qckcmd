@@ -40,6 +40,12 @@ BLOCKQUOTE {
   background: #ccc !important;
 }
 
+.hljs-ln-numbers {
+  vertical-align: top;
+}
+.hljs-ln-line {
+  margin-right: 15px;
+}
 .nohljsln .hljs-ln-numbers {
   display: none;
 }
