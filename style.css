@@ -51,3 +51,13 @@ BLOCKQUOTE {
   background-color: rgb(255, 255, 191);
   font-weight: bold;
 }
+
+.pkgcmds {
+  position: relative;
+}
+
+.vert-hr {
+  position: absolute;
+  margin: 0 0 0 20px !important;
+  height: 100%;
+}
