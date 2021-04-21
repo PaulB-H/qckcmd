@@ -359,17 +359,6 @@ e - manually edit the current hunk
 
       <hr />
 
-      <div id="pm2">
-        <h2>PM2</h2>
-
-        <pre><code class="md">pm2 status</code></pre>
-        <blockquote>
-          List the status of all application managed by PM2:
-        </blockquote>
-      </div>
-
-      <hr />
-
       <div id="favorites">
         <h2>Favorite Packages / Libraries</h2>
 
@@ -430,11 +419,25 @@ e - manually edit the current hunk
         <pre><code class="md md-link"><a href="https://www.npmjs.com/package/concurrently" target="_blank">concurrently</a></code></pre>
         <blockquote>Run multiple commands concurrently</blockquote>
 
-        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
-        <blockquote>
-          ...a production process manager for Node.js applications with a
-          built-in load balancer
-        </blockquote>
+        <div id="pm2">
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
+            <blockquote>
+              ...a production process manager for Node.js applications with a
+              built-in load balancer
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr />
+            <pre
+              style="margin-left: 40px"
+            ><code class="md">pm2 status</code></pre>
+            <blockquote style="margin-left: 40px">
+              List the status of all application managed by PM2:
+            </blockquote>
+          </div>
+        </div>
 
         <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongodb" target="_blank">mongodb</a></code></pre>
         <blockquote>The official MongoDB driver for Node.js</blockquote>
