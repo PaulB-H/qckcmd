@@ -61,6 +61,13 @@ BLOCKQUOTE {
 .pkgcmds {
   position: relative;
 }
+.pkgcmds > *,
+.pkgcmds pre {
+  margin-left: 40px !important;
+}
+.pkgcmds blockquote {
+  margin-left: 60px !important;
+}
 
 .vert-hr {
   position: absolute;
