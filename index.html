@@ -379,13 +379,50 @@ e - manually edit the current hunk
 
       <hr />
 
+      <div id="react">
+        <h2>React</h2>
+        <div class="pkgheader">
+          <pre><code class="md md-link"><a href="https://reactjs.org/" target="_blank">react</a></code></pre>
+          <blockquote>
+            ...a JavaScript library for creating user interfaces.
+          </blockquote>
+        </div>
+
+        <div class="pkgcmds">
+          <hr class="vert-hr" />
+
+          <strike>
+            <pre><code class="md md-link"><a href="#" target="_blank">create-react-app</a></code></pre>
+          </strike>
+          <blockquote>
+            Create React apps with no build configuration.
+          </blockquote>
+          <p class="notice" style="padding-bottom: 20px">
+            ! You no longer need to install this package !<br />
+            Create a new react app with:<br /><br />
+            <code style="padding: 5px">npx create-react-app</code>
+          </p>
+
+          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
+          <blockquote>
+            ...a collection of navigational components that compose
+            declaratively with your application.<br />
+            (DOM Version, React-Native applications only require react-router)
+          </blockquote>
+        </div>
+        <!-- END pkgcmds -->
+      </div>
+      <!-- END react -->
+
+      <hr />
+
       <div id="favnpm">
         <h2>NPM Packages</h2>
 
         <p class="notice">
           Note to self!<br />
-          List node & react modules like fs and ReactFragment<br />
-          in their own section
+          List node modules like fs<br />
+          in own section
         </p>
 
         <div id="express">
@@ -414,19 +451,6 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
 
         <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
         <blockquote>An express.js middleware for validator</blockquote>
-
-        <strike>
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/create-react-app" target="_blank">create-react-app</a></code></pre>
-        </strike>
-        <blockquote></blockquote>
-        <p class="notice">
-          You no longer need this package!<br />
-          Create a new react app with:<br /><br />
-          <code style="padding: 5px">npx create-react-app</code>
-        </p>
-
-        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
-        <blockquote>DOM bindings for React Router</blockquote>
 
         <div id="nodemon">
           <div class="pkgheader">
@@ -530,9 +554,6 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
           I think this is the one I have used before. Interested in making some
           CLI apps.
         </p>
-
-        <pre><code class="md md-link"><a href="" target="_blank"></a></code></pre>
-        <blockquote></blockquote>
       </div>
 
       <hr />

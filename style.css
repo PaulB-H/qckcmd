@@ -65,7 +65,8 @@ BLOCKQUOTE {
 .pkgcmds pre {
   margin-left: 40px !important;
 }
-.pkgcmds blockquote {
+.pkgcmds blockquote,
+.pkgcmds .notice {
   margin-left: 60px !important;
 }
 
