@@ -59,6 +59,14 @@
         <pre><code class="md">Ctrl + Shift + 5</code></pre>
         <blockquote>Split terminal</blockquote>
 
+        <p class="notice">
+          For below command<br />
+          Keep Ctrl held entire time<br />
+          Press keys in brackets together<br />
+        </p>
+        <pre><code class="md">Ctrl + ( K ) -> ( Shift + S )</code></pre>
+        <blockquote>Save without formatting</blockquote>
+
         <pre><code class="md">Alt + B</code></pre>
         <blockquote>
           Opens current file in browser (with
@@ -352,16 +360,81 @@ e - manually edit the current hunk
 
       <div id="nginx">
         <h2>NGINX</h2>
+        <div class="pkgheader">
+          <pre><code class="md md-link"><a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/" target="_blank">nginx</a></code></pre>
+          <blockquote>
+            High Performance Load Balancer, Web Server, & Reverse Proxy
+          </blockquote>
+        </div>
 
-        <pre><code class="md">ln -s /etc/nginx/sites-available/EXAMPLE.CONF /etc/nginx/sites-enabled/</code></pre>
-        <blockquote>
-          Create symbolic link from specified file as EXAMPLE.CONF into dir at
-          /etc/nginx/sites-enabled/
-        </blockquote>
+        <div class="pkgcmds">
+          <hr class="vert-hr" />
 
-        <pre><code class="md">sudo systemctl restart nginx</code></pre>
-        <blockquote>Restart NGINX</blockquote>
+          <h3>Server Block Example</h3>
+          <p class="notice">
+            Sections managed by certbot are inserted upon SSL generation
+          </p>
+
+          <p>
+            The first section listens on port 443 for HTTPS and serves
+            index/root dir
+          </p>
+          <br />
+          <p>
+            The second section listens on port 80 for HTTP requests, and
+            redirects them to HTTPS
+          </p>
+
+          <pre style="margin-left: 40px"><code class="md">server {
+  # Used to select server block for processing
+  server_name mydomain.ca www.mydomain.ca;
+
+  # Configures publicly served root dir
+  root /var/www/mydomain;
+	
+  # Configures index file to be served
+  index index.html index.htm;
+	
+  # Below managed by Certbot
+  listen 443 ssl;
+  ssl_certificate /etc/letsencrypt/live/www.mydomain.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/www.mydomain.com/privkey.pem;
+  include /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+} 
+	
+server {
+  # Redirect if not https
+  if ($host = www.mydomain.ca) {
+    return 301 https://$host$request_uri;
+  } # Managed by Certbot
+  if ($host = mydomain.ca) {
+    return 301 https://$host$request_uri;
+  } # Managed by Certbot
+	
+  listen 80;
+  server_name mydomain.ca www.mydomain.ca;
+	
+  return 404; # managed by Certbot
+	
+}</code></pre>
+          <br />
+          <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
+          <blockquote>
+            Create symbolic link from specified file into dir at:<br />
+            /etc/nginx/sites-enabled/<br />
+            <br />
+            Run this once base server block has been setup. After the command is
+            run, the created file will always match the contents of the
+            reference file, no need to run the command again.
+          </blockquote>
+
+          <pre><code class="md">sudo systemctl restart nginx</code></pre>
+          <blockquote>Restart NGINX</blockquote>
+        </div>
+        <!-- END pkgcmds -->
       </div>
+      <!-- END nginx -->
 
       <hr />
 
