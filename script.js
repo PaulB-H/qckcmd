@@ -19,11 +19,6 @@ const applyNightMode = () => {
     item.style.color = "black";
   });
 
-  document.querySelectorAll("a").forEach((item) => {
-    item.style.padding = "3px";
-    item.style.background = "#ccc";
-  });
-
   document.querySelectorAll("hr").forEach((item) => {
     item.style.color = "white";
   });
@@ -47,11 +42,6 @@ const revertNightMode = () => {
 
   document.querySelectorAll(".notice").forEach((item) => {
     item.style.color = null;
-  });
-
-  document.querySelectorAll("a").forEach((item) => {
-    item.style.padding = "3px";
-    item.style.background = "#ccc";
   });
 
   document.querySelectorAll("hr").forEach((item) => {

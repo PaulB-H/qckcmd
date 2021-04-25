@@ -11,16 +11,21 @@ body {
   max-width: 600px;
 }
 
-hr {
-  margin: 10px 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
   margin: 10px 20px;
+}
+
+a {
+  padding: 3px;
+  background-color: #ccc;
+}
+
+hr {
+  margin: 10px 0;
 }
 
 code {
