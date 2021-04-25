@@ -417,7 +417,7 @@ e - manually edit the current hunk
             redirects them to HTTPS
           </p>
 
-          <pre style="margin-left: 40px"><code class="md">server {
+          <pre><code class="md">server {
   # Used to select server block for processing
   server_name mydomain.ca www.mydomain.ca;
 
@@ -584,15 +584,13 @@ server {
 
           <div class="pkgcmds">
             <hr class="vert-hr" />
-            <pre
-              style="margin-left: 40px"
-            ><code class="js">const express = require("express");
+            <pre><code class="js">const express = require("express");
 const app = express();
 app.get("/", (req, res) => res.json({ msg: "Welcome to the backend" }));
 app.listen(5000, () => console.log(`Server started on port ${5000}`));
 // run 'node server' then navigate to 'localhost:5000' in browser
 </code></pre>
-            <blockquote style="margin-left: 40px">
+            <blockquote>
               Most basic express server, sending a static JSON response.
             </blockquote>
           </div>
@@ -613,10 +611,8 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
 
           <div class="pkgcmds">
             <hr class="vert-hr" />
-            <pre
-              style="margin-left: 40px"
-            ><code class="md">nodemon server</code></pre>
-            <blockquote style="margin-left: 40px">
+            <pre><code class="md">nodemon server</code></pre>
+            <blockquote>
               runs server.js file and watches for changes.
             </blockquote>
           </div>
@@ -636,10 +632,8 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
 
           <div class="pkgcmds">
             <hr class="vert-hr" />
-            <pre
-              style="margin-left: 40px"
-            ><code class="md">pm2 status</code></pre>
-            <blockquote style="margin-left: 40px">
+            <pre><code class="md">pm2 status</code></pre>
+            <blockquote>
               List the status of all application managed by PM2:
             </blockquote>
           </div>
