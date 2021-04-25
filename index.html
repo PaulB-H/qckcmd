@@ -240,9 +240,13 @@ e - manually edit the current hunk
 
         <pre><code class="md">apt-get update && apt-get upgrade -y</code></pre>
         <blockquote>
-          Download current package information<br />&& install available
-          upgrades.<br />Pass "-y" at end to accept additional disk space usage.
+          Download current package information<br />
+          && install available upgrades.<br />
+          Pass "-y" to accept additional disk space usage
         </blockquote>
+
+        <pre><code class="md">reboot now</code></pre>
+        <blockquote>Reboot system</blockquote>
 
         <pre><code class="md">ls</code></pre>
         <blockquote>List files in current dir</blockquote>
@@ -252,6 +256,14 @@ e - manually edit the current hunk
 
         <pre><code class="md">mkdir DIRNAME</code></pre>
         <blockquote>Create directory</blockquote>
+
+        <pre><code class="md">getent passwd | awk -F: "{if (\$3 >= $(awk '/^UID_MIN/ {print $2}' /etc/login.defs) && \$3 <= $(awk '/^UID_MAX/ {print $2}' /etc/login.defs)) print \$1}"</code></pre>
+        <blockquote>
+          List all non-system users<br />
+          From
+          <a href="https://askubuntu.com/a/633911" target="_blank">this</a>
+          thread
+        </blockquote>
 
         <pre><code class="md">adduser USERNAME</code></pre>
         <blockquote>Create user</blockquote>
