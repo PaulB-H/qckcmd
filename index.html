@@ -260,6 +260,7 @@ e - manually edit the current hunk
         <pre><code class="md">getent passwd | awk -F: "{if (\$3 >= $(awk '/^UID_MIN/ {print $2}' /etc/login.defs) && \$3 <= $(awk '/^UID_MAX/ {print $2}' /etc/login.defs)) print \$1}"</code></pre>
         <blockquote>
           List all non-system users<br />
+          <hr style="margin: 1px !important; width: 240px" />
           From
           <a href="https://askubuntu.com/a/633911" target="_blank">this</a>
           thread
