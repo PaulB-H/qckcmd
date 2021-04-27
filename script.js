@@ -75,6 +75,7 @@ collapseAllSections();
 
 collapsibleSections.forEach((item) => {
   let header = item.firstElementChild;
+  header.style = "color: white; display: flex; justify-content: space-between";
   header.insertAdjacentHTML(
     `beforeend`,
     `
