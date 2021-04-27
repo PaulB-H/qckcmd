@@ -93,9 +93,12 @@ const expandCollapse = (sectionID) => {
     sectionToCollapse.style.overflow = null;
     sectionCollapseBtn.innerHTML = "Collapse";
     sectionToCollapse.classList.remove("collapsed");
-  } else {
+    sectionToCollapse.classList.add("expanded");
+  } else if (sectionToCollapse.classList.contains("expanded")) {
     sectionToCollapse.style.height = "43px";
     sectionToCollapse.style.overflow = "hidden";
     sectionCollapseBtn.innerHTML = "Expand";
+    sectionToCollapse.classList.add("collapsed");
+    sectionToCollapse.classList.remove("expanded");
   }
 };
