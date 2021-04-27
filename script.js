@@ -86,9 +86,16 @@ collapsibleSections.forEach((item) => {
 const expandCollapse = (sectionID) => {
   console.log(sectionID);
   let sectionToCollapse = document.getElementById(`${sectionID}`);
-  let sectionCollapseBtn = sectionToCollapse.firstElementChild;
+  let sectionCollapseBtn =
+    sectionToCollapse.firstElementChild.firstElementChild;
   if (sectionToCollapse.classList.contains("collapsed")) {
     sectionToCollapse.style.height = null;
     sectionToCollapse.style.overflow = null;
+    sectionCollapseBtn.innerHTML = "Collapse";
+    sectionToCollapse.classList.remove("collapsed");
+  } else {
+    sectionToCollapse.style.height = "43px";
+    sectionToCollapse.style.overflow = "hidden";
+    sectionCollapseBtn.innerHTML = "Expand";
   }
 };
