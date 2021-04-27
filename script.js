@@ -72,3 +72,13 @@ const collapseAllSections = () => {
     item.style.overflow = "hidden";
   });
 };
+
+collapsibleSections.forEach((item) => {
+  let header = item.firstElementChild;
+  header.insertAdjacentHTML(
+    `beforeend`,
+    `
+    <button style="float: right; padding: 5px; border-radius: 3px">Expand</button>
+  `
+  );
+});
