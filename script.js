@@ -63,3 +63,12 @@ const commandObject = {
 };
 
 console.log(commandObject);
+
+let collapsibleSections = document.querySelectorAll(".collapsible");
+
+const collapseAllSections = () => {
+  collapsibleSections.forEach((item) => {
+    item.style.height = "43px";
+    item.style.overflow = "hidden";
+  });
+};
