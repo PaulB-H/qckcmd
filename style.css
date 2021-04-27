@@ -81,6 +81,10 @@ BLOCKQUOTE {
   height: 100%;
 }
 
+.collapsible {
+  overflow: hidden;
+}
+
 .expandcollapse {
   padding: 5px;
   border-radius: 3px;

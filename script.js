@@ -67,7 +67,6 @@ let collapsibleSections = document.querySelectorAll(".collapsible");
 const collapseAllSections = () => {
   collapsibleSections.forEach((item) => {
     item.style.height = "43px";
-    item.style.overflow = "hidden";
     item.classList.add("collapsed");
   });
 };
@@ -91,13 +90,11 @@ const expandCollapse = (sectionID) => {
     sectionToCollapse.firstElementChild.firstElementChild;
   if (sectionToCollapse.classList.contains("collapsed")) {
     sectionToCollapse.style.height = null;
-    sectionToCollapse.style.overflow = null;
     sectionCollapseBtn.innerHTML = "Collapse";
     sectionToCollapse.classList.remove("collapsed");
     sectionToCollapse.classList.add("expanded");
   } else if (sectionToCollapse.classList.contains("expanded")) {
     sectionToCollapse.style.height = "43px";
-    sectionToCollapse.style.overflow = "hidden";
     sectionCollapseBtn.innerHTML = "Expand";
     sectionToCollapse.classList.add("collapsed");
     sectionToCollapse.classList.remove("expanded");
