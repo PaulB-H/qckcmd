@@ -62,23 +62,33 @@ const commandObject = {
   ],
 };
 
-console.log(commandObject);
-
 let collapsibleSections = document.querySelectorAll(".collapsible");
 
 const collapseAllSections = () => {
   collapsibleSections.forEach((item) => {
     item.style.height = "43px";
     item.style.overflow = "hidden";
+    item.classList.add("collapsed");
   });
 };
+collapseAllSections();
 
 collapsibleSections.forEach((item) => {
   let header = item.firstElementChild;
   header.insertAdjacentHTML(
     `beforeend`,
     `
-    <button class="expandcollapse">Expand</button>
+    <button class="expandcollapse" onclick="expandCollapse('${item.id}')">Expand</button>
   `
   );
 });
+
+const expandCollapse = (sectionID) => {
+  console.log(sectionID);
+  let sectionToCollapse = document.getElementById(`${sectionID}`);
+  let sectionCollapseBtn = sectionToCollapse.firstElementChild;
+  if (sectionToCollapse.classList.contains("collapsed")) {
+    sectionToCollapse.style.height = null;
+    sectionToCollapse.style.overflow = null;
+  }
+};
