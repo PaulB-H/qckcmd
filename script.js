@@ -78,7 +78,7 @@ collapsibleSections.forEach((item) => {
   header.insertAdjacentHTML(
     `beforeend`,
     `
-    <button style="float: right; padding: 5px; border-radius: 3px">Expand</button>
+    <button class="expandcollapse">Expand</button>
   `
   );
 });

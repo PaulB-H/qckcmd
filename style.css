@@ -80,3 +80,9 @@ BLOCKQUOTE {
   margin: 0 0 0 20px !important;
   height: 100%;
 }
+
+.expandcollapse {
+  float: right;
+  padding: 5px;
+  border-radius: 3px;
+}
