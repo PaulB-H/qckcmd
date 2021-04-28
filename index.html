@@ -495,6 +495,31 @@ server {
           <hr class="vert-hr" />
           <h3>Built-in Modules</h3>
 
+          <pre><code class="js">const http = require('http');</code></pre>
+          <blockquote>Create an HTTP server in node</blockquote>
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+
+            <pre><code class="js">var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('Hello World!');
+  res.end();
+}).listen(8080);</code></pre>
+            <blockquote>
+              Basic server example <br />
+              <a
+                href="https://www.w3schools.com/nodejs/ref_http.asp"
+                target="_blank"
+                >(from w3 schools)</a
+              >
+            </blockquote>
+            <p class="notice">
+              Usually use express to create the server & manage routes, instead
+              of this built in module.
+            </p>
+          </div>
+
           <pre><code class="js">const path = require('path');</code></pre>
           <blockquote>
             The Path module provides a way of working with directories and file
