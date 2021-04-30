@@ -884,6 +884,7 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
           </div>
         </div>
 
+        <!-- javascript -->
         <div id="javascript">
           <div class="pkgheader">
             <h2>JavaScript</h2>
@@ -892,13 +893,32 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
           <div class="pkgcmds">
             <hr class="vert-hr" />
 
-            <h3>Heading 3</h3>
-            <pre><code class="css">const myFunc = () => {
-  console.log("Code examples here")              
-}</code></pre>
-            <blockquote>This is a blockquote</blockquote>
+            <h3>Declaring a variable</h3>
+            <pre><code class="js">var var1 = "Hello";
+let var2 = "JavaScript";
+const var3 = "World!";</code></pre>
+
+            <h3>Functions</h3>
+            <pre><code class="js">function regularFunction(num1, num2) {
+  return num1 + num2;
+}
+
+// Arrow functions do not have their own 'this', among other things.
+const arrowFunction = (num1, num2) => {
+  return num1 + num2;
+}
+
+// Un-named arrow function.
+(num1, num2) => {
+  return num1 + num2;
+}
+
+// one param, one return
+num1 => num1 * 5
+</code></pre>
           </div>
         </div>
+        <!-- END javascript -->
 
         <div id="reactexamples">
           <div class="pkgheader">
