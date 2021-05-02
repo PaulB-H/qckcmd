@@ -312,124 +312,74 @@ e - manually edit the current hunk
         <blockquote>Check version of specified package</blockquote>
 
         <hr />
-
-        <h2>Ubuntu<br />unattended-upgrades</h2>
-
-        <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
-        <blockquote>Install unattended-upgrades package.</blockquote>
-
-        <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
-        <blockquote>
-          Enable unattended-upgrades to automatically install security updates.
-        </blockquote>
-
-        <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
-        <blockquote>Link to docs</blockquote>
-
-        <hr />
-
-        <h2>Ubuntu UFW<br />Uncomplicated Firewall</h2>
-
-        <pre><code class="md">sudo ufw app list</code></pre>
-        <blockquote>
-          List application configurations that ufw knows how to work with.
-        </blockquote>
-
-        <pre><code class="md">sudo ufw default deny incoming</code></pre>
-        <blockquote>Deny all incoming connections</blockquote>
-
-        <pre><code class="md">sudo ufw default allow outgoing</code></pre>
-        <blockquote>Allow all outgoing connections</blockquote>
-
-        <pre><code class="md">sudo ufw deny http</code></pre>
-        <blockquote>Deny http connections</blockquote>
-
-        <pre><code class="md">sudo ufw allow ssh</code></pre>
-        <blockquote>Allow SSH connections</blockquote>
-        <p class="notice">
-          ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH
-        </p>
-
-        <pre><code class="md">sudo ufw enable</code></pre>
-        <blockquote>Enable UFW</blockquote>
-        <p class="notice">
-          ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW OVER
-          SSH
-        </p>
-
-        <pre><code class="md">sudo ufw delete RULE/"RULE SPLIT"</code></pre>
-        <blockquote>Delete a rule.</blockquote>
-
-        <pre><code class="md">sudo ufw status verbose</code></pre>
-        <blockquote>Display detailed UFW status</blockquote>
-
-        <pre><code class="md">ufw disable</code></pre>
-        <blockquote>turn off UFW without deleting rules.</blockquote>
-
-        <pre><code class="md">ufw reset</code></pre>
-        <blockquote>Turn off UFW and delete all rules.</blockquote>
       </div>
 
       <hr />
 
-      <div id="purgatory" style="display: none !important" tabindex="-1">
-        <div id="fail2ban" class="collapsible">
-          <h2>fail2ban</h2>
+      <!-- Ubuntu Server Config w/NGINX -->
+      <div id="server-config" class="collapsible">
+        <h2>Server Configuration</h2>
+        <div class="pkgcmds">
+          <hr class="vert-hr" />
 
-          <pre
-            style="margin-bottom: 35px"
-          ><code class="md md-link"><a href="https://www.linode.com/docs/security/using-fail2ban-to-secure-your-server-a-tutorial/" target="_blank" >Linode: Fail2ban tutorial</a></code></pre>
+          <div id="fail2ban" class="collapsible">
+            <h2>fail2ban</h2>
 
-          <pre><code class="md">apt-get install fail2ban</code></pre>
-          <blockquote>
-            Install fail2ban, the service automatically starts.<br />Default
-            settings allow a baseline of security. View tutorial linked above
-            for advanced options.
-          </blockquote>
+            <pre
+              style="margin-bottom: 35px"
+            ><code class="md md-link"><a href="https://www.linode.com/docs/security/using-fail2ban-to-secure-your-server-a-tutorial/" target="_blank" >Linode: Fail2ban tutorial</a></code></pre>
 
-          <pre><code class="md">fail2ban-client help</code></pre>
-          <blockquote>List all commands.</blockquote>
-
-          <pre><code class="md">fail2ban-client status</code></pre>
-          <blockquote>gets the current status of the server.</blockquote>
-
-          <pre><code class="md">fail2ban-client start</code></pre>
-          <blockquote>Starts server and jails.</blockquote>
-
-          <pre><code class="md">fail2ban-client stop</code></pre>
-          <blockquote>Stops all jails and terminates server.</blockquote>
-        </div>
-
-        <hr />
-
-        <div id="nginx" class="collapsible">
-          <h2>NGINX</h2>
-          <div class="pkgheader">
-            <pre><code class="md md-link"><a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/" target="_blank">nginx</a></code></pre>
+            <pre><code class="md">apt-get install fail2ban</code></pre>
             <blockquote>
-              High Performance Load Balancer, Web Server, & Reverse Proxy
+              Install fail2ban, the service automatically starts.<br />Default
+              settings allow a baseline of security. View tutorial linked above
+              for advanced options.
             </blockquote>
+
+            <pre><code class="md">fail2ban-client help</code></pre>
+            <blockquote>List all commands.</blockquote>
+
+            <pre><code class="md">fail2ban-client status</code></pre>
+            <blockquote>gets the current status of the server.</blockquote>
+
+            <pre><code class="md">fail2ban-client start</code></pre>
+            <blockquote>Starts server and jails.</blockquote>
+
+            <pre><code class="md">fail2ban-client stop</code></pre>
+            <blockquote>Stops all jails and terminates server.</blockquote>
           </div>
+          <!-- END fail2ban -->
 
-          <div class="pkgcmds">
-            <hr class="vert-hr" />
+          <hr />
 
-            <h3>Server Block Example</h3>
-            <p class="notice">
-              Sections managed by certbot are inserted upon SSL generation
-            </p>
+          <div id="nginx" class="collapsible">
+            <h2>NGINX</h2>
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/" target="_blank">nginx</a></code></pre>
+              <blockquote>
+                High Performance Load Balancer, Web Server, & Reverse Proxy
+              </blockquote>
+            </div>
 
-            <p>
-              The first section listens on port 443 for HTTPS and serves
-              index/root dir
-            </p>
-            <br />
-            <p>
-              The second section listens on port 80 for HTTP requests, and
-              redirects them to HTTPS
-            </p>
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
 
-            <pre><code class="md">server {
+              <h3>Server Block Example</h3>
+              <p class="notice">
+                Sections managed by certbot are inserted upon SSL generation
+              </p>
+
+              <p>
+                The first section listens on port 443 for HTTPS and serves
+                index/root dir
+              </p>
+              <br />
+              <p>
+                The second section listens on port 80 for HTTP requests, and
+                redirects them to HTTPS
+              </p>
+
+              <pre><code class="md">server {
   # Used to select server block for processing
   server_name mydomain.ca www.mydomain.ca;
 
@@ -462,24 +412,108 @@ server {
   return 404; # managed by Certbot
 	
 }</code></pre>
-            <br />
-            <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
-            <blockquote>
-              Create symbolic link from specified file into dir at:<br />
-              /etc/nginx/sites-enabled/<br />
               <br />
-              Run this once base server block has been setup. After the command
-              is run, the created file will always match the contents of the
-              reference file, no need to run the command again.
-            </blockquote>
+              <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
+              <blockquote>
+                Create symbolic link from specified file into dir at:<br />
+                /etc/nginx/sites-enabled/<br />
+                <br />
+                Run this once base server block has been setup. After the
+                command is run, the created file will always match the contents
+                of the reference file, no need to run the command again.
+              </blockquote>
 
-            <pre><code class="md">sudo systemctl restart nginx</code></pre>
-            <blockquote>Restart NGINX</blockquote>
+              <pre><code class="md">sudo systemctl restart nginx</code></pre>
+              <blockquote>Restart NGINX</blockquote>
+            </div>
+            <!-- END pkgcmds -->
           </div>
-          <!-- END pkgcmds -->
-        </div>
-        <!-- END nginx -->
+          <!-- END nginx -->
 
+          <hr />
+
+          <div id="unattended-upgrades" class="collapsible">
+            <h2>unattended-upgrades</h2>
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
+              <blockquote>Link to docs</blockquote>
+            </div>
+
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
+
+              <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
+              <blockquote>Install unattended-upgrades package.</blockquote>
+
+              <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
+              <blockquote>
+                Enable unattended-upgrades to automatically install security
+                updates.
+              </blockquote>
+            </div>
+            <!-- END pkgcmds -->
+          </div>
+          <!-- END unattended-upgrades -->
+
+          <hr />
+
+          <div id="unattended-upgrades" class="collapsible">
+            <h2>Ubuntu UFW<br />Uncomplicated Firewall</h2>
+
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/UFW" target="_blank" >help.ubuntu.com/community/UFW</a></code></pre>
+              <blockquote>Link to docs</blockquote>
+            </div>
+
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
+
+              <pre><code class="md">sudo ufw app list</code></pre>
+              <blockquote>
+                List application configurations that ufw knows how to work with.
+              </blockquote>
+
+              <pre><code class="md">sudo ufw default deny incoming</code></pre>
+              <blockquote>Deny all incoming connections</blockquote>
+
+              <pre><code class="md">sudo ufw default allow outgoing</code></pre>
+              <blockquote>Allow all outgoing connections</blockquote>
+
+              <pre><code class="md">sudo ufw deny http</code></pre>
+              <blockquote>Deny http connections</blockquote>
+
+              <pre><code class="md">sudo ufw allow ssh</code></pre>
+              <blockquote>Allow SSH connections</blockquote>
+              <p class="notice">
+                ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH
+              </p>
+
+              <pre><code class="md">sudo ufw enable</code></pre>
+              <blockquote>Enable UFW</blockquote>
+              <p class="notice">
+                ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW
+                OVER SSH
+              </p>
+
+              <pre><code class="md">sudo ufw delete RULE/"RULE SPLIT"</code></pre>
+              <blockquote>Delete a rule.</blockquote>
+
+              <pre><code class="md">sudo ufw status verbose</code></pre>
+              <blockquote>Display detailed UFW status</blockquote>
+
+              <pre><code class="md">ufw disable</code></pre>
+              <blockquote>turn off UFW without deleting rules.</blockquote>
+
+              <pre><code class="md">ufw reset</code></pre>
+              <blockquote>Turn off UFW and delete all rules.</blockquote>
+            </div>
+            <!-- END .pkgcmds -->
+          </div>
+        </div>
+      </div>
+      <!-- END #server-config -->
+
+      <div id="purgatory" style="display: none !important" tabindex="-1">
         <hr />
 
         <div id="node" class="collapsible">
