@@ -318,7 +318,7 @@ e - manually edit the current hunk
 
       <!-- Ubuntu Server Config w/NGINX -->
       <div id="server-config" class="collapsible">
-        <h2>Server Configuration</h2>
+        <h2>Server Management</h2>
         <div class="pkgcmds">
           <hr class="vert-hr" />
 
@@ -512,6 +512,47 @@ server {
         </div>
       </div>
       <!-- END #server-config -->
+
+      <hr />
+
+      <!-- VS Code Config -->
+      <div id="vscode-config" class="collapsible">
+        <h2>VS Code Config</h2>
+        <div class="pkgcmds">
+          <hr class="vert-hr" />
+
+          <div id="vscode-extensions" class="collapsible">
+            <h2>Extensions</h2>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
+            <blockquote>
+              A basic spell checker that works well with camelCase code.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
+            <blockquote>
+              This extension allows matching brackets to be identified with
+              colours.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
+            <blockquote>
+              JavaScript and React/Redux snippets in ES7+ with Babel plugin
+              features for VS Code.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
+            <blockquote>Prettier is an opinionated code formatter.</blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
+            <blockquote>
+              This allows you to open the current file in your default browser
+              or application.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- END #vscode-config -->
 
       <div id="purgatory" style="display: none !important" tabindex="-1">
         <hr />
@@ -808,36 +849,6 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
         <!-- END react -->
 
         <hr />
-
-        <div id="vscodeextensions" class="collapsible">
-          <h2>VS Code Extensions</h2>
-
-          <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
-          <blockquote>
-            A basic spell checker that works well with camelCase code.
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
-          <blockquote>
-            This extension allows matching brackets to be identified with
-            colours.
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
-          <blockquote>
-            JavaScript and React/Redux snippets in ES7+ with Babel plugin
-            features for VS Code.
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
-          <blockquote>Prettier is an opinionated code formatter.</blockquote>
-
-          <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
-          <blockquote>
-            This allows you to open the current file in your default browser or
-            application.
-          </blockquote>
-        </div>
 
         <hr />
 
