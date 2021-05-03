@@ -24,6 +24,11 @@ a {
   background-color: #ccc;
 }
 
+button {
+  background: white;
+  color: black;
+}
+
 hr {
   margin: 10px 0;
 }
