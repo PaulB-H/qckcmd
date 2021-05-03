@@ -39,7 +39,7 @@
       <p class="notice">ALLCAPS = user defined variable</p>
     </header>
 
-    <main>
+    <div>
       <hr />
 
       <h1><pre style="color: yellow !important">Commands:</pre></h1>
@@ -519,6 +519,136 @@ server {
 
       <hr />
 
+      <!-- Most Used / Fav NPM Packages -->
+      <div id="favnpm" class="collapsible">
+        <h2>NPM Packages</h2>
+
+        <div id="express">
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
+            <blockquote>
+              Fast, unopinionated, minimalist web framework for node.
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+            <pre><code class="js">const express = require("express");
+const app = express();
+app.get("/", (req, res) => res.json({ msg: "Welcome to the backend" }));
+app.listen(5000, () => console.log(`Server started on port ${5000}`));
+// run 'node server' then navigate to 'localhost:5000' in browser
+</code></pre>
+            <blockquote>
+              An example express server, sending a small JSON response.
+            </blockquote>
+          </div>
+        </div>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
+        <blockquote>An express.js middleware for validator</blockquote>
+
+        <div id="nodemon">
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a></code></pre>
+            <blockquote>
+              ...a tool that helps develop node.js based applications by
+              automatically restarting the node application when file changes
+              in the directory are detected.
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+            <pre><code class="md">nodemon server</code></pre>
+            <blockquote>
+              runs server.js file and watches for changes.
+            </blockquote>
+          </div>
+        </div>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/concurrently" target="_blank">concurrently</a></code></pre>
+        <blockquote>Run multiple commands concurrently</blockquote>
+
+        <div id="pm2">
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
+            <blockquote>
+              ...a production process manager for Node.js applications with a
+              built-in load balancer
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+            <pre><code class="md">pm2 status</code></pre>
+            <blockquote>
+              List the status of all application managed by PM2:
+            </blockquote>
+          </div>
+        </div>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongodb" target="_blank">mongodb</a></code></pre>
+        <blockquote>The official MongoDB driver for Node.js</blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongoose" target="_blank">mongoose</a></code></pre>
+        <blockquote>
+          a MongoDB object modeling tool designed to work in an asynchronous
+          environment
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/axios" target="_blank">axios</a></code></pre>
+        <blockquote>
+          Promise based HTTP client for the browser and node.js
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/bcrypt" target="_blank">bcrypt</a></code></pre>
+        <blockquote>A library to help you hash (& salt) passwords</blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a></code></pre>
+        <blockquote>An implementation of JSON Web Tokens</blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/validator" target="_blank">validator</a></code></pre>
+        <blockquote>A library of string validators and sanitizers</blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/socket.io" target="_blank">socket.io</a></code></pre>
+        <blockquote>
+          ...enables real-time bidirectional event-based communication
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/config" target="_blank">config</a></code></pre>
+        <blockquote>
+          Node-config organizes hierarchical configurations for your app
+          deployments
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a></code></pre>
+        <blockquote>
+          ...a zero-dependency module that loads environment variables from a
+          .env file into process.env
+        </blockquote>
+
+        <hr />
+
+        <h3>Bookmarks / Others:</h3>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-session" target="_blank">express-sessions</a></code></pre>
+        <blockquote>Simple session middleware for express</blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/lodash" target="_blank">lodash</a></code></pre>
+        <blockquote>
+          The Lodash library exported as Node.js modules
+        </blockquote>
+
+        <pre><code class="md md-link"><a href="https://www.npmjs.com/package/inquirer" target="_blank">inquirer</a></code></pre>
+        <blockquote>
+          A collection of common interactive command line user interfaces.
+        </blockquote>
+      </div>
+      <!-- END #favnpm -->
+
+      <hr />
+
       <!-- VS Code Config -->
       <div id="vscode-config" class="collapsible">
         <h2>VS Code Config</h2>
@@ -665,135 +795,7 @@ http.createServer(function (req, res) {
         <!-- END node -->
         <hr />
 
-        <div id="favnpm" class="collapsible">
-          <h2>NPM Packages</h2>
-
-          <div id="express">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
-              <blockquote>
-                Fast, unopinionated, minimalist web framework for node.
-              </blockquote>
-            </div>
-
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-              <pre><code class="js">const express = require("express");
-const app = express();
-app.get("/", (req, res) => res.json({ msg: "Welcome to the backend" }));
-app.listen(5000, () => console.log(`Server started on port ${5000}`));
-// run 'node server' then navigate to 'localhost:5000' in browser
-</code></pre>
-              <blockquote>
-                Most basic express server, sending a static JSON response.
-              </blockquote>
-            </div>
-          </div>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
-          <blockquote>An express.js middleware for validator</blockquote>
-
-          <div id="nodemon">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a></code></pre>
-              <blockquote>
-                ...a tool that helps develop node.js based applications by
-                automatically restarting the node application when file changes
-                in the directory are detected.
-              </blockquote>
-            </div>
-
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-              <pre><code class="md">nodemon server</code></pre>
-              <blockquote>
-                runs server.js file and watches for changes.
-              </blockquote>
-            </div>
-          </div>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/concurrently" target="_blank">concurrently</a></code></pre>
-          <blockquote>Run multiple commands concurrently</blockquote>
-
-          <div id="pm2">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
-              <blockquote>
-                ...a production process manager for Node.js applications with a
-                built-in load balancer
-              </blockquote>
-            </div>
-
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-              <pre><code class="md">pm2 status</code></pre>
-              <blockquote>
-                List the status of all application managed by PM2:
-              </blockquote>
-            </div>
-          </div>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongodb" target="_blank">mongodb</a></code></pre>
-          <blockquote>The official MongoDB driver for Node.js</blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongoose" target="_blank">mongoose</a></code></pre>
-          <blockquote>
-            a MongoDB object modeling tool designed to work in an asynchronous
-            environment
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/axios" target="_blank">axios</a></code></pre>
-          <blockquote>
-            Promise based HTTP client for the browser and node.js
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/bcrypt" target="_blank">bcrypt</a></code></pre>
-          <blockquote>A library to help you hash (& salt) passwords</blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a></code></pre>
-          <blockquote>An implementation of JSON Web Tokens</blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/validator" target="_blank">validator</a></code></pre>
-          <blockquote>A library of string validators and sanitizers</blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/socket.io" target="_blank">socket.io</a></code></pre>
-          <blockquote>
-            ...enables real-time bidirectional event-based communication
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/config" target="_blank">config</a></code></pre>
-          <blockquote>
-            Node-config organizes hierarchical configurations for your app
-            deployments
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a></code></pre>
-          <blockquote>
-            ...a zero-dependency module that loads environment variables from a
-            .env file into process.env
-          </blockquote>
-
-          <hr />
-
-          <h3>Packages I am interested in</h3>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-session" target="_blank">express-sessions</a></code></pre>
-          <blockquote>Simple session middleware for express</blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/lodash" target="_blank">lodash</a></code></pre>
-          <blockquote>
-            The Lodash library exported as Node.js modules
-          </blockquote>
-
-          <pre><code class="md md-link"><a href="https://www.npmjs.com/package/inquirer" target="_blank">inquirer</a></code></pre>
-          <blockquote>
-            A collection of common interactive command line user interfaces.
-          </blockquote>
-          <p class="notice">
-            I think this is the one I have used before. Interested in making
-            some CLI apps.
-          </p>
-        </div>
+        
 
         <hr />
 
