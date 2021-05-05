@@ -1,3 +1,5 @@
+"use strict";
+
 hljs.initHighlightingOnLoad();
 hljs.initLineNumbersOnLoad();
 
@@ -84,7 +86,6 @@ collapsibleSections.forEach((item) => {
 });
 
 const expandCollapse = (sectionID) => {
-  console.log(sectionID);
   let sectionToCollapse = document.getElementById(`${sectionID}`);
   let sectionCollapseBtn =
     sectionToCollapse.firstElementChild.firstElementChild;
