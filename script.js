@@ -100,3 +100,31 @@ const expandCollapse = (sectionID) => {
     sectionToCollapse.classList.remove("expanded");
   }
 };
+
+const sortPackageList = () => {
+  const packages = document.getElementById("package-list");
+  let len = packages.children.length;
+  let IDarr = [];
+  let packageArr = [];
+
+  for (let i = 0; i < len; i++) {
+    IDarr.push(packages.children[i].id);
+    packageArr.push(packages.children[i]);
+  }
+  IDarr.sort();
+
+  let sortedElems = [];
+  IDarr.forEach((id) => {
+    packageArr.forEach((elem) => {
+      if (elem.id === id) {
+        sortedElems.push(elem);
+      }
+    });
+  });
+
+  packages.innerHTML = "";
+  sortedElems.forEach((item) =>
+    packages.insertAdjacentElement("beforeend", item)
+  );
+};
+sortPackageList();
