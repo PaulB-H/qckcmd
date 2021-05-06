@@ -32,9 +32,13 @@
 
       <br />
 
-      <pre
-        style="margin-bottom: 35px"
-      ><code class="md md-link"><a href="https://github.com/PaulB-H" target="_blank" >Find me on GitHub</a></code></pre>
+      <pre style="margin-bottom: 35px">
+        <code class="md md-link">
+          <a href="https://github.com/PaulB-H" target="_blank" >
+            Find me on GitHub
+          </a>
+        </code>
+      </pre>
 
       <p class="notice">ALLCAPS = user defined variable</p>
 
@@ -47,93 +51,94 @@
           =>,&nbsp;&nbsp; ===,&nbsp;&nbsp;&nbsp; <=
         </span>
       </p>
+
+      <hr />
     </header>
 
     <main>
-      <hr />
+      <div id="commands">
+        <h1><pre style="color: yellow !important">Commands:</pre></h1>
 
-      <h1><pre style="color: yellow !important">Commands:</pre></h1>
+        <div id="vscode" class="collapsible">
+          <h2>VS Code</h2>
 
-      <div id="vscode" class="collapsible">
-        <h2>VS Code</h2>
+          <p class="notice">
+            Cursor location determines scope when collapsing a single region or
+            subregion.
+          </p>
 
-        <p class="notice">
-          Cursor location determines scope when collapsing a single region or
-          subregion.
-        </p>
+          <pre><code class="md">Ctrl + `</code></pre>
+          <blockquote>Show / hide integrated terminal</blockquote>
 
-        <pre><code class="md">Ctrl + `</code></pre>
-        <blockquote>Show / hide integrated terminal</blockquote>
+          <pre><code class="md">Ctrl + Shift + `</code></pre>
+          <blockquote>Open new terminal</blockquote>
 
-        <pre><code class="md">Ctrl + Shift + `</code></pre>
-        <blockquote>Open new terminal</blockquote>
+          <pre><code class="md">Ctrl + Shift + 5</code></pre>
+          <blockquote>Split terminal</blockquote>
 
-        <pre><code class="md">Ctrl + Shift + 5</code></pre>
-        <blockquote>Split terminal</blockquote>
+          <p class="notice">
+            For below command<br />
+            Keep Ctrl held entire time<br />
+            Press keys in brackets together<br />
+          </p>
+          <pre><code class="md">Ctrl + ( K ) -> ( Shift + S )</code></pre>
+          <blockquote>Save without formatting</blockquote>
 
-        <p class="notice">
-          For below command<br />
-          Keep Ctrl held entire time<br />
-          Press keys in brackets together<br />
-        </p>
-        <pre><code class="md">Ctrl + ( K ) -> ( Shift + S )</code></pre>
-        <blockquote>Save without formatting</blockquote>
+          <pre><code class="md">Alt + B</code></pre>
+          <blockquote>
+            Opens current file in browser (with
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser"
+              target="_blank"
+              >this</a
+            >
+            extension)
+          </blockquote>
 
-        <pre><code class="md">Alt + B</code></pre>
-        <blockquote>
-          Opens current file in browser (with
-          <a
-            href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser"
-            target="_blank"
-            >this</a
-          >
-          extension)
-        </blockquote>
+          <pre><code class="md">Ctrl + Shift + [</code></pre>
+          <blockquote>Fold (collapse) region</blockquote>
 
-        <pre><code class="md">Ctrl + Shift + [</code></pre>
-        <blockquote>Fold (collapse) region</blockquote>
+          <pre><code class="md">Ctrl + Shift + ]</code></pre>
+          <blockquote>Unfold (uncollapse) region</blockquote>
 
-        <pre><code class="md">Ctrl + Shift + ]</code></pre>
-        <blockquote>Unfold (uncollapse) region</blockquote>
+          <p class="notice">
+            For the following commands, keep Ctrl held but press the other keys
+            one after another.
+          </p>
 
-        <p class="notice">
-          For the following commands, keep Ctrl held but press the other keys
-          one after another.
-        </p>
+          <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
+          <blockquote>Fold (collapse) all subregions</blockquote>
 
-        <pre><code class="md">Ctrl + K -> Ctrl + [</code></pre>
-        <blockquote>Fold (collapse) all subregions</blockquote>
+          <pre><code class="md">Ctrl + K -> Ctrl + ]</code></pre>
+          <blockquote>Unfold (uncollapse) all subregions</blockquote>
 
-        <pre><code class="md">Ctrl + K -> Ctrl + ]</code></pre>
-        <blockquote>Unfold (uncollapse) all subregions</blockquote>
+          <pre><code class="md">Ctrl + K -> Ctrl + 0</code></pre>
+          <blockquote>Fold (collapse) all regions</blockquote>
 
-        <pre><code class="md">Ctrl + K -> Ctrl + 0</code></pre>
-        <blockquote>Fold (collapse) all regions</blockquote>
+          <pre><code class="md">Ctrl + K -> Ctrl + J</code></pre>
+          <blockquote>Unfold (uncollapse) all regions</blockquote>
+        </div>
 
-        <pre><code class="md">Ctrl + K -> Ctrl + J</code></pre>
-        <blockquote>Unfold (uncollapse) all regions</blockquote>
-      </div>
+        <hr />
 
-      <hr />
+        <div id="git" class="collapsible">
+          <h2>Git</h2>
 
-      <div id="git" class="collapsible">
-        <h2>Git</h2>
+          <pre><code class="md">git init</code></pre>
+          <blockquote>
+            Initializes a LOCAL git repository in the current dir
+          </blockquote>
 
-        <pre><code class="md">git init</code></pre>
-        <blockquote>
-          Initializes a LOCAL git repository in the current dir
-        </blockquote>
+          <pre><code class="md">git add .</code></pre>
+          <blockquote>Stage all saved files for next commit</blockquote>
 
-        <pre><code class="md">git add .</code></pre>
-        <blockquote>Stage all saved files for next commit</blockquote>
+          <pre><code class="md">git add FILENAME</code></pre>
+          <blockquote>
+            Stage specific file(s) for next commit<br />
+            Specify dir as DIR/DIR/FILENAME
+          </blockquote>
 
-        <pre><code class="md">git add FILENAME</code></pre>
-        <blockquote>
-          Stage specific file(s) for next commit<br />
-          Specify dir as DIR/DIR/FILENAME
-        </blockquote>
-
-        <pre><code class="md nohljsln">git add -p
+          <pre><code class="md nohljsln">git add -p
  -- -- -- --
 (1/10) Stage this hunk [y,n,q,a,d,j,J,g,/,s,e,?]? ?
 y - stage this hunk
@@ -148,252 +153,254 @@ J - leave this hunk undecided, see next hunk
 <strong style="font-size: 110%;">s - split the current hunk into smaller hunks</strong>
 e - manually edit the current hunk
 ? - print help</code></pre>
-        <blockquote>
-          Add to staging specific hunks from within a file(s)<br />
-          Note ability to split hunks into smaller parts
-        </blockquote>
+          <blockquote>
+            Add to staging specific hunks from within a file(s)<br />
+            Note ability to split hunks into smaller parts
+          </blockquote>
 
-        <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
-        <blockquote>
-          SUBJECT recommend character length = 50, max = 72. DETAILS put
-          anything more.
-        </blockquote>
+          <pre><code class="md">git commit -m "SUBJECT" -m "DETAILS"</code></pre>
+          <blockquote>
+            SUBJECT recommend character length = 50, max = 72. DETAILS put
+            anything more.
+          </blockquote>
 
-        <pre><code class="md">git push origin TARGET</code></pre>
-        <blockquote>Pushes to specified remote, typically "main"</blockquote>
+          <pre><code class="md">git push origin TARGET</code></pre>
+          <blockquote>Pushes to specified remote, typically "main"</blockquote>
 
-        <pre><code class="md">git reset</code></pre>
-        <blockquote>
-          Remove from staging anything that has not been committed.
-        </blockquote>
+          <pre><code class="md">git reset</code></pre>
+          <blockquote>
+            Remove from staging anything that has not been committed.
+          </blockquote>
 
-        <pre><code class="md">git reset HEAD~1</code></pre>
-        <blockquote>
-          Locally remove last commit, un-stage all changes.
-        </blockquote>
+          <pre><code class="md">git reset HEAD~1</code></pre>
+          <blockquote>
+            Locally remove last commit, un-stage all changes.
+          </blockquote>
 
-        <pre><code class="md">git reset --soft HEAD~1</code></pre>
-        <blockquote>
-          Locally remove last commit, changes remain staged.
-        </blockquote>
+          <pre><code class="md">git reset --soft HEAD~1</code></pre>
+          <blockquote>
+            Locally remove last commit, changes remain staged.
+          </blockquote>
 
-        <pre><code class="md">git reset --hard HEAD~1</code></pre>
-        <blockquote>
-          Locally remove last commit,
-          <strong
-            style="padding: 3px; background: rgb(248, 255, 153); color: red"
-            >DELETE</strong
+          <pre><code class="md">git reset --hard HEAD~1</code></pre>
+          <blockquote>
+            Locally remove last commit,
+            <strong
+              style="padding: 3px; background: rgb(248, 255, 153); color: red"
+              >DELETE</strong
+            >
+            any changes.
+          </blockquote>
+        </div>
+
+        <hr />
+
+        <div id="githubcli" class="collapsible">
+          <h2>GitHub CLI</h2>
+
+          <a
+            style="padding: 0.5em"
+            href="https://github.com/cli/cli#installation"
+            target="_blank"
           >
-          any changes.
-        </blockquote>
-      </div>
+            github-cli#download-and-install
+          </a>
 
-      <hr />
+          <blockquote>Link to installation</blockquote>
 
-      <div id="githubcli" class="collapsible">
-        <h2>GitHub CLI</h2>
+          <pre><code class="md">gh repo create</code></pre>
+          <blockquote>
+            Creates a remote repo on GitHub, and initializes it as an active
+            remote to push/pull
+          </blockquote>
+        </div>
 
-        <a
-          style="padding: 0.5em"
-          href="https://github.com/cli/cli#installation"
-          target="_blank"
-        >
-          github-cli#download-and-install
-        </a>
+        <hr />
 
-        <blockquote>Link to installation</blockquote>
+        <div id="herokucli" class="collapsible">
+          <h2>Heroku CLI</h2>
 
-        <pre><code class="md">gh repo create</code></pre>
-        <blockquote>
-          Creates a remote repo on GitHub, and initializes it as an active
-          remote to push/pull
-        </blockquote>
-      </div>
+          <a
+            style="padding: 0.5em"
+            href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install"
+            target="_blank"
+          >
+            heroku-cli#download-and-install
+          </a>
+          <blockquote>Link to installation</blockquote>
 
-      <hr />
+          <pre><code class="md">heroku create appname</code></pre>
+          <blockquote>
+            Creates a heroku application. You may leave appname blank, and a
+            random name will be used.
+          </blockquote>
 
-      <div id="herokucli" class="collapsible">
-        <h2>Heroku CLI</h2>
+          <pre><code class="md">heroku apps:rename NEWNAME</code></pre>
+          <blockquote>Renames an app.</blockquote>
 
-        <a
-          style="padding: 0.5em"
-          href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install"
-          target="_blank"
-        >
-          heroku-cli#download-and-install
-        </a>
-        <blockquote>Link to installation</blockquote>
+          <pre><code class="md">git remote rm heroku<br />heroku git:remote -a NEWNAME</code></pre>
+          <blockquote>
+            Update remote details in other repo's after renaming from another
+            location. Use the NEWNAME that was set for the repo.
+          </blockquote>
+        </div>
 
-        <pre><code class="md">heroku create appname</code></pre>
-        <blockquote>
-          Creates a heroku application. You may leave appname blank, and a
-          random name will be used.
-        </blockquote>
+        <hr />
 
-        <pre><code class="md">heroku apps:rename NEWNAME</code></pre>
-        <blockquote>Renames an app.</blockquote>
+        <div id="ssh" class="collapsible">
+          <h2>SSH</h2>
+          <pre><code class="md">ssh USERNAME@IPADDRESS</code></pre>
+          <blockquote>Open SSH connection to target IP as USERNAME</blockquote>
 
-        <pre><code class="md">git remote rm heroku<br />heroku git:remote -a NEWNAME</code></pre>
-        <blockquote>
-          Update remote details in other repo's after renaming from another
-          location. Use the NEWNAME that was set for the repo.
-        </blockquote>
-      </div>
+          <pre><code class="md md-link"><a href="https://winscp.net/eng/index.php" target="_blank" >WinSCP</a></code></pre>
+          <blockquote>SFTP/FTP client client for Windows</blockquote>
 
-      <hr />
+          <pre><code class="md md-link"><a href="https://code.visualstudio.com/docs/remote/ssh#_getting-started" target="_blank" >SSH in VS Code</a></code></pre>
+          <blockquote>Remote Development in VS Code using SSH</blockquote>
+          <p class="notice">
+            Remote machine needs SSH Server, local Windows needs SSH Client
+          </p>
 
-      <div id="ssh" class="collapsible">
-        <h2>SSH</h2>
-        <pre><code class="md">ssh USERNAME@IPADDRESS</code></pre>
-        <blockquote>Open SSH connection to target IP as USERNAME</blockquote>
+          <pre><code class="md md-link"><a href="https://www.putty.org/" target="_blank" >PuTTY</a></code></pre>
+          <blockquote>PuTTY is an SSH and telnet client</blockquote>
+          <p class="notice">
+            Haven't needed PuTTY since Windows 10 has a built in SSH client, you
+            can SSH direct in terminal. I did use this a bit early on.
+          </p>
+        </div>
 
-        <pre><code class="md md-link"><a href="https://winscp.net/eng/index.php" target="_blank" >WinSCP</a></code></pre>
-        <blockquote>SFTP/FTP client client for Windows</blockquote>
+        <hr />
 
-        <pre><code class="md md-link"><a href="https://code.visualstudio.com/docs/remote/ssh#_getting-started" target="_blank" >SSH in VS Code</a></code></pre>
-        <blockquote>Remote Development in VS Code using SSH</blockquote>
-        <p class="notice">
-          Remote machine needs SSH Server, local Windows needs SSH Client
-        </p>
+        <div id="ubuntu" class="collapsible">
+          <h2>Ubuntu</h2>
 
-        <pre><code class="md md-link"><a href="https://www.putty.org/" target="_blank" >PuTTY</a></code></pre>
-        <blockquote>PuTTY is an SSH and telnet client</blockquote>
-        <p class="notice">
-          Haven't needed PuTTY since Windows 10 has a built in SSH client, you
-          can SSH direct in terminal. I did use this a bit early on.
-        </p>
-      </div>
+          <pre><code class="md">apt-get update && apt-get upgrade -y</code></pre>
+          <blockquote>
+            Download current package information<br />
+            && install available upgrades.<br />
+            Pass "-y" to accept additional disk space usage
+          </blockquote>
 
-      <hr />
+          <pre><code class="md">reboot now</code></pre>
+          <blockquote>Reboot system</blockquote>
 
-      <div id="ubuntu" class="collapsible">
-        <h2>Ubuntu</h2>
+          <pre><code class="md">ls</code></pre>
+          <blockquote>List files in current dir</blockquote>
 
-        <pre><code class="md">apt-get update && apt-get upgrade -y</code></pre>
-        <blockquote>
-          Download current package information<br />
-          && install available upgrades.<br />
-          Pass "-y" to accept additional disk space usage
-        </blockquote>
+          <pre><code class="md">cd TARGET</code></pre>
+          <blockquote>Change directory</blockquote>
 
-        <pre><code class="md">reboot now</code></pre>
-        <blockquote>Reboot system</blockquote>
+          <pre><code class="md">touch FILENAME.EXT</code></pre>
+          <blockquote>Create a file</blockquote>
 
-        <pre><code class="md">ls</code></pre>
-        <blockquote>List files in current dir</blockquote>
+          <pre><code class="md">mv FILENAME /DIR/DIRECTORY</code></pre>
+          <blockquote>Move file</blockquote>
 
-        <pre><code class="md">cd TARGET</code></pre>
-        <blockquote>Change directory</blockquote>
+          <pre><code class="md">mkdir DIRNAME</code></pre>
+          <blockquote>Create directory</blockquote>
 
-        <pre><code class="md">touch FILENAME.EXT</code></pre>
-        <blockquote>Create a file</blockquote>
+          <pre><code class="md">getent passwd | awk -F: "{if (\$3 >= $(awk '/^UID_MIN/ {print $2}' /etc/login.defs) && \$3 <= $(awk '/^UID_MAX/ {print $2}' /etc/login.defs)) print \$1}"</code></pre>
+          <blockquote>
+            List all non-system users<br />
+            <hr style="margin: 1px !important; width: 240px" />
+            From
+            <a href="https://askubuntu.com/a/633911" target="_blank">this</a>
+            thread
+          </blockquote>
 
-        <pre><code class="md">mv FILENAME /DIR/DIRECTORY</code></pre>
-        <blockquote>Move file</blockquote>
+          <pre><code class="md">adduser USERNAME</code></pre>
+          <blockquote>Create user</blockquote>
 
-        <pre><code class="md">mkdir DIRNAME</code></pre>
-        <blockquote>Create directory</blockquote>
+          <pre><code class="md">su USERNAME</code></pre>
+          <blockquote>Switch user</blockquote>
 
-        <pre><code class="md">getent passwd | awk -F: "{if (\$3 >= $(awk '/^UID_MIN/ {print $2}' /etc/login.defs) && \$3 <= $(awk '/^UID_MAX/ {print $2}' /etc/login.defs)) print \$1}"</code></pre>
-        <blockquote>
-          List all non-system users<br />
-          <hr style="margin: 1px !important; width: 240px" />
-          From
-          <a href="https://askubuntu.com/a/633911" target="_blank">this</a>
-          thread
-        </blockquote>
+          <pre><code class="md">usermod -aG sudo USERNAME</code></pre>
+          <blockquote>Grant user sudo permission</blockquote>
 
-        <pre><code class="md">adduser USERNAME</code></pre>
-        <blockquote>Create user</blockquote>
+          <pre><code class="md">deluser USERNAME</code></pre>
+          <blockquote>
+            Delete a user, without deleting their files or dir
+          </blockquote>
 
-        <pre><code class="md">su USERNAME</code></pre>
-        <blockquote>Switch user</blockquote>
+          <pre><code class="md">apt list --installed</code></pre>
+          <blockquote>List installed packages</blockquote>
 
-        <pre><code class="md">usermod -aG sudo USERNAME</code></pre>
-        <blockquote>Grant user sudo permission</blockquote>
+          <pre><code class="md">PACKAGENAME -v</code></pre>
+          <blockquote>Check version of specified package</blockquote>
 
-        <pre><code class="md">deluser USERNAME</code></pre>
-        <blockquote>
-          Delete a user, without deleting their files or dir
-        </blockquote>
-
-        <pre><code class="md">apt list --installed</code></pre>
-        <blockquote>List installed packages</blockquote>
-
-        <pre><code class="md">PACKAGENAME -v</code></pre>
-        <blockquote>Check version of specified package</blockquote>
+          <hr />
+        </div>
 
         <hr />
       </div>
 
-      <hr />
+      <div id="everything-else">
+        <h1><pre style="color: yellow !important">Everything else:</pre></h1>
 
-      <h1><pre style="color: yellow !important">Everything else:</pre></h1>
+        <!-- Ubuntu Server Config w/NGINX -->
+        <div id="server-config" class="collapsible">
+          <h2>Server Management</h2>
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
 
-      <!-- Ubuntu Server Config w/NGINX -->
-      <div id="server-config" class="collapsible">
-        <h2>Server Management</h2>
-        <div class="pkgcmds">
-          <hr class="vert-hr" />
+            <div id="fail2ban" class="collapsible">
+              <h2>fail2ban</h2>
 
-          <div id="fail2ban" class="collapsible">
-            <h2>fail2ban</h2>
+              <pre
+                style="margin-bottom: 35px"
+              ><code class="md md-link"><a href="https://www.linode.com/docs/security/using-fail2ban-to-secure-your-server-a-tutorial/" target="_blank" >Linode: Fail2ban tutorial</a></code></pre>
 
-            <pre
-              style="margin-bottom: 35px"
-            ><code class="md md-link"><a href="https://www.linode.com/docs/security/using-fail2ban-to-secure-your-server-a-tutorial/" target="_blank" >Linode: Fail2ban tutorial</a></code></pre>
-
-            <pre><code class="md">apt-get install fail2ban</code></pre>
-            <blockquote>
-              Install fail2ban, the service automatically starts.<br />Default
-              settings allow a baseline of security. View tutorial linked above
-              for advanced options.
-            </blockquote>
-
-            <pre><code class="md">fail2ban-client help</code></pre>
-            <blockquote>List all commands.</blockquote>
-
-            <pre><code class="md">fail2ban-client status</code></pre>
-            <blockquote>gets the current status of the server.</blockquote>
-
-            <pre><code class="md">fail2ban-client start</code></pre>
-            <blockquote>Starts server and jails.</blockquote>
-
-            <pre><code class="md">fail2ban-client stop</code></pre>
-            <blockquote>Stops all jails and terminates server.</blockquote>
-          </div>
-          <!-- END fail2ban -->
-
-          <hr />
-
-          <div id="nginx" class="collapsible">
-            <h2>NGINX</h2>
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/" target="_blank">nginx</a></code></pre>
+              <pre><code class="md">apt-get install fail2ban</code></pre>
               <blockquote>
-                High Performance Load Balancer, Web Server, & Reverse Proxy
+                Install fail2ban, the service automatically starts.<br />Default
+                settings allow a baseline of security. View tutorial linked
+                above for advanced options.
               </blockquote>
+
+              <pre><code class="md">fail2ban-client help</code></pre>
+              <blockquote>List all commands.</blockquote>
+
+              <pre><code class="md">fail2ban-client status</code></pre>
+              <blockquote>gets the current status of the server.</blockquote>
+
+              <pre><code class="md">fail2ban-client start</code></pre>
+              <blockquote>Starts server and jails.</blockquote>
+
+              <pre><code class="md">fail2ban-client stop</code></pre>
+              <blockquote>Stops all jails and terminates server.</blockquote>
             </div>
+            <!-- END fail2ban -->
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
+            <hr />
 
-              <h3>Server Block Example</h3>
-              <p class="notice">
-                Sections managed by certbot are inserted upon SSL generation
-              </p>
+            <div id="nginx" class="collapsible">
+              <h2>NGINX</h2>
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/" target="_blank">nginx</a></code></pre>
+                <blockquote>
+                  High Performance Load Balancer, Web Server, & Reverse Proxy
+                </blockquote>
+              </div>
 
-              <p>
-                The first section listens on port 443 for HTTPS and serves
-                index/root dir
-              </p>
-              <br />
-              <p>
-                The second section listens on port 80 for HTTP requests, and
-                redirects them to HTTPS
-              </p>
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
 
-              <pre><code class="md">server {
+                <h3>Server Block Example</h3>
+                <p class="notice">
+                  Sections managed by certbot are inserted upon SSL generation
+                </p>
+
+                <p>
+                  The first section listens on port 443 for HTTPS and serves
+                  index/root dir
+                </p>
+                <br />
+                <p>
+                  The second section listens on port 80 for HTTP requests, and
+                  redirects them to HTTPS
+                </p>
+
+                <pre><code class="md">server {
   # Used to select server block for processing
   server_name mydomain.ca www.mydomain.ca;
 
@@ -426,123 +433,125 @@ server {
   return 404; # managed by Certbot
 	
 }</code></pre>
-              <br />
-              <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
-              <blockquote>
-                Create symbolic link from specified file into dir at:<br />
-                /etc/nginx/sites-enabled/<br />
                 <br />
-                Run this once base server block has been setup. After the
-                command is run, the created file will always match the contents
-                of the reference file, no need to run the command again.
-              </blockquote>
+                <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
+                <blockquote>
+                  Create symbolic link from specified file into dir at:<br />
+                  /etc/nginx/sites-enabled/<br />
+                  <br />
+                  Run this once base server block has been setup. After the
+                  command is run, the created file will always match the
+                  contents of the reference file, no need to run the command
+                  again.
+                </blockquote>
 
-              <pre><code class="md">sudo systemctl restart nginx</code></pre>
-              <blockquote>Restart NGINX</blockquote>
+                <pre><code class="md">sudo systemctl restart nginx</code></pre>
+                <blockquote>Restart NGINX</blockquote>
+              </div>
+              <!-- END pkgcmds -->
             </div>
-            <!-- END pkgcmds -->
-          </div>
-          <!-- END nginx -->
+            <!-- END nginx -->
 
-          <hr />
+            <hr />
 
-          <div id="unattended-upgrades" class="collapsible">
-            <h2>unattended-upgrades</h2>
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
-              <blockquote>Link to docs</blockquote>
+            <div id="unattended-upgrades" class="collapsible">
+              <h2>unattended-upgrades</h2>
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
+                <blockquote>Link to docs</blockquote>
+              </div>
+
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
+                <blockquote>Install unattended-upgrades package.</blockquote>
+
+                <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
+                <blockquote>
+                  Enable unattended-upgrades to automatically install security
+                  updates.
+                </blockquote>
+              </div>
+              <!-- END pkgcmds -->
             </div>
+            <!-- END unattended-upgrades -->
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
+            <hr />
 
-              <pre><code class="md">sudo apt-get install unattended-upgrades</code></pre>
-              <blockquote>Install unattended-upgrades package.</blockquote>
+            <div id="ufw" class="collapsible">
+              <h2>Uncomplicated Firewall</h2>
 
-              <pre><code class="md">sudo dpkg-reconfigure --priority=low unattended-upgrades</code></pre>
-              <blockquote>
-                Enable unattended-upgrades to automatically install security
-                updates.
-              </blockquote>
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/UFW" target="_blank" >help.ubuntu.com/community/UFW</a></code></pre>
+                <blockquote>Link to docs</blockquote>
+              </div>
+
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <pre><code class="md">sudo ufw app list</code></pre>
+                <blockquote>
+                  List application configurations that ufw knows how to work
+                  with.
+                </blockquote>
+
+                <pre><code class="md">sudo ufw default deny incoming</code></pre>
+                <blockquote>Deny all incoming connections</blockquote>
+
+                <pre><code class="md">sudo ufw default allow outgoing</code></pre>
+                <blockquote>Allow all outgoing connections</blockquote>
+
+                <pre><code class="md">sudo ufw deny http</code></pre>
+                <blockquote>Deny http connections</blockquote>
+
+                <pre><code class="md">sudo ufw allow ssh</code></pre>
+                <blockquote>Allow SSH connections</blockquote>
+                <p class="notice">
+                  ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH
+                </p>
+
+                <pre><code class="md">sudo ufw enable</code></pre>
+                <blockquote>Enable UFW</blockquote>
+                <p class="notice">
+                  ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING
+                  UFW OVER SSH
+                </p>
+
+                <pre><code class="md">sudo ufw delete RULE/"RULE SPLIT"</code></pre>
+                <blockquote>Delete a rule.</blockquote>
+
+                <pre><code class="md">sudo ufw status verbose</code></pre>
+                <blockquote>Display detailed UFW status</blockquote>
+
+                <pre><code class="md">ufw disable</code></pre>
+                <blockquote>turn off UFW without deleting rules.</blockquote>
+
+                <pre><code class="md">ufw reset</code></pre>
+                <blockquote>Turn off UFW and delete all rules.</blockquote>
+              </div>
+              <!-- END .pkgcmds -->
             </div>
-            <!-- END pkgcmds -->
-          </div>
-          <!-- END unattended-upgrades -->
-
-          <hr />
-
-          <div id="ufw" class="collapsible">
-            <h2>Uncomplicated Firewall</h2>
-
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/UFW" target="_blank" >help.ubuntu.com/community/UFW</a></code></pre>
-              <blockquote>Link to docs</blockquote>
-            </div>
-
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-
-              <pre><code class="md">sudo ufw app list</code></pre>
-              <blockquote>
-                List application configurations that ufw knows how to work with.
-              </blockquote>
-
-              <pre><code class="md">sudo ufw default deny incoming</code></pre>
-              <blockquote>Deny all incoming connections</blockquote>
-
-              <pre><code class="md">sudo ufw default allow outgoing</code></pre>
-              <blockquote>Allow all outgoing connections</blockquote>
-
-              <pre><code class="md">sudo ufw deny http</code></pre>
-              <blockquote>Deny http connections</blockquote>
-
-              <pre><code class="md">sudo ufw allow ssh</code></pre>
-              <blockquote>Allow SSH connections</blockquote>
-              <p class="notice">
-                ENSURE THIS COMMAND IS RUN BEFORE ENABLING UFW OVER SSH
-              </p>
-
-              <pre><code class="md">sudo ufw enable</code></pre>
-              <blockquote>Enable UFW</blockquote>
-              <p class="notice">
-                ENSURE "sudo ufw allow ssh" HAS BEEN RUN FIRST WHEN ENABLING UFW
-                OVER SSH
-              </p>
-
-              <pre><code class="md">sudo ufw delete RULE/"RULE SPLIT"</code></pre>
-              <blockquote>Delete a rule.</blockquote>
-
-              <pre><code class="md">sudo ufw status verbose</code></pre>
-              <blockquote>Display detailed UFW status</blockquote>
-
-              <pre><code class="md">ufw disable</code></pre>
-              <blockquote>turn off UFW without deleting rules.</blockquote>
-
-              <pre><code class="md">ufw reset</code></pre>
-              <blockquote>Turn off UFW and delete all rules.</blockquote>
-            </div>
-            <!-- END .pkgcmds -->
           </div>
         </div>
-      </div>
-      <!-- END #server-config -->
+        <!-- END #server-config -->
 
-      <hr />
+        <hr />
 
-      <!-- Most Used / Fav NPM Packages -->
-      <div id="favnpm" class="collapsible">
-        <h2>NPM Packages</h2>
+        <!-- Most Used / Fav NPM Packages -->
+        <div id="favnpm" class="collapsible">
+          <h2>NPM Packages</h2>
 
-        <div id="package-list">
-          <div id="express">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
-              <blockquote>
-                Fast, unopinionated, minimalist web framework for node.
-              </blockquote>
-            </div>
+          <div id="package-list">
+            <div id="express">
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express" target="_blank">express</a></code></pre>
+                <blockquote>
+                  Fast, unopinionated, minimalist web framework for node.
+                </blockquote>
+              </div>
 
-            <!-- <div class="pkgcmds">
+              <!-- <div class="pkgcmds">
             <hr class="vert-hr" />
             <pre><code class="js">const express = require("express");
 const app = express();
@@ -554,408 +563,411 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
               An example express server, sending a small JSON response.
             </blockquote>
           </div> -->
-          </div>
-
-          <div id="express-validator">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
-            <blockquote>An express.js middleware for validator</blockquote>
-          </div>
-
-          <div id="nodemon">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a></code></pre>
-              <blockquote>
-                ...automatically restarts node application when file changes in
-                the directory are detected
-              </blockquote>
             </div>
 
-            <!-- <div class="pkgcmds">
+            <div id="express-validator">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-validator" target="_blank">express-validator</a></code></pre>
+              <blockquote>An express.js middleware for validator</blockquote>
+            </div>
+
+            <div id="nodemon">
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a></code></pre>
+                <blockquote>
+                  ...automatically restarts node application when file changes
+                  in the directory are detected
+                </blockquote>
+              </div>
+
+              <!-- <div class="pkgcmds">
             <hr class="vert-hr" />
             <pre><code class="md">nodemon server</code></pre>
             <blockquote>
               runs server.js file and watches for changes.
             </blockquote>
           </div> -->
-          </div>
-
-          <div id="concurrently">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/concurrently" target="_blank">concurrently</a></code></pre>
-            <blockquote>Run multiple commands concurrently</blockquote>
-          </div>
-
-          <div id="pm2">
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
-              <blockquote>
-                ...a production process manager for Node.js applications with a
-                built-in load balancer
-              </blockquote>
             </div>
 
-            <!-- <div class="pkgcmds">
+            <div id="concurrently">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/concurrently" target="_blank">concurrently</a></code></pre>
+              <blockquote>Run multiple commands concurrently</blockquote>
+            </div>
+
+            <div id="pm2">
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">pm2</a></code></pre>
+                <blockquote>
+                  ...a production process manager for Node.js applications with
+                  a built-in load balancer
+                </blockquote>
+              </div>
+
+              <!-- <div class="pkgcmds">
             <hr class="vert-hr" />
             <pre><code class="md">pm2 status</code></pre>
             <blockquote>
               List the status of all application managed by PM2:
             </blockquote>
           </div> -->
-          </div>
+            </div>
 
-          <div id="mongodb">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongodb" target="_blank">mongodb</a></code></pre>
-            <blockquote>The official MongoDB driver for Node.js</blockquote>
-          </div>
+            <div id="mongodb">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongodb" target="_blank">mongodb</a></code></pre>
+              <blockquote>The official MongoDB driver for Node.js</blockquote>
+            </div>
 
-          <div id="mongoose">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongoose" target="_blank">mongoose</a></code></pre>
-            <blockquote>
-              a MongoDB object modeling tool designed to work in an asynchronous
-              environment
-            </blockquote>
-          </div>
+            <div id="mongoose">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/mongoose" target="_blank">mongoose</a></code></pre>
+              <blockquote>
+                a MongoDB object modeling tool designed to work in an
+                asynchronous environment
+              </blockquote>
+            </div>
 
-          <div id="axios">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/axios" target="_blank">axios</a></code></pre>
-            <blockquote>
-              Promise based HTTP client for the browser and node.js
-            </blockquote>
-          </div>
+            <div id="axios">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/axios" target="_blank">axios</a></code></pre>
+              <blockquote>
+                Promise based HTTP client for the browser and node.js
+              </blockquote>
+            </div>
 
-          <div id="bcrypt">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/bcrypt" target="_blank">bcrypt</a></code></pre>
-            <blockquote>
-              A library to help you hash (& salt) passwords
-            </blockquote>
-          </div>
+            <div id="bcrypt">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/bcrypt" target="_blank">bcrypt</a></code></pre>
+              <blockquote>
+                A library to help you hash (& salt) passwords
+              </blockquote>
+            </div>
 
-          <div id="jsonwebtoken">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a></code></pre>
-            <blockquote>An implementation of JSON Web Tokens</blockquote>
-          </div>
+            <div id="jsonwebtoken">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank">jsonwebtoken</a></code></pre>
+              <blockquote>An implementation of JSON Web Tokens</blockquote>
+            </div>
 
-          <div id="validator">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/validator" target="_blank">validator</a></code></pre>
-            <blockquote>
-              A library of string validators and sanitizers
-            </blockquote>
-          </div>
+            <div id="validator">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/validator" target="_blank">validator</a></code></pre>
+              <blockquote>
+                A library of string validators and sanitizers
+              </blockquote>
+            </div>
 
-          <div id="socketio">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/socket.io" target="_blank">socket.io</a></code></pre>
-            <blockquote>
-              ...enables real-time bidirectional event-based communication
-            </blockquote>
-          </div>
+            <div id="socketio">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/socket.io" target="_blank">socket.io</a></code></pre>
+              <blockquote>
+                ...enables real-time bidirectional event-based communication
+              </blockquote>
+            </div>
 
-          <div id="config">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/config" target="_blank">config</a></code></pre>
-            <blockquote>
-              Node-config organizes hierarchical configurations for your app
-              deployments
-            </blockquote>
-          </div>
+            <div id="config">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/config" target="_blank">config</a></code></pre>
+              <blockquote>
+                Node-config organizes hierarchical configurations for your app
+                deployments
+              </blockquote>
+            </div>
 
-          <div id="dotenv">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a></code></pre>
-            <blockquote>
-              ...loads environment variables from a .env file into process.env
-            </blockquote>
-          </div>
+            <div id="dotenv">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a></code></pre>
+              <blockquote>
+                ...loads environment variables from a .env file into process.env
+              </blockquote>
+            </div>
 
-          <div id="express-sessions">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-session" target="_blank">express-sessions</a></code></pre>
-            <blockquote>Simple session middleware for express</blockquote>
-          </div>
+            <div id="express-sessions">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/express-session" target="_blank">express-sessions</a></code></pre>
+              <blockquote>Simple session middleware for express</blockquote>
+            </div>
 
-          <div id="lodash">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/lodash" target="_blank">lodash</a></code></pre>
-            <blockquote>
-              The Lodash library exported as Node.js modules
-            </blockquote>
-          </div>
+            <div id="lodash">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/lodash" target="_blank">lodash</a></code></pre>
+              <blockquote>
+                The Lodash library exported as Node.js modules
+              </blockquote>
+            </div>
 
-          <div id="inquirer">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/inquirer" target="_blank">inquirer</a></code></pre>
-            <blockquote>
-              A collection of common interactive command line user interfaces.
-            </blockquote>
-          </div>
+            <div id="inquirer">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/inquirer" target="_blank">inquirer</a></code></pre>
+              <blockquote>
+                A collection of common interactive command line user interfaces.
+              </blockquote>
+            </div>
 
-          <div id="speakeasy">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/speakeasy" target="_blank">speakeasy</a></code></pre>
-            <blockquote>
-              ...a one-time passcode generator, ideal for use in two-factor
-              authentication
-            </blockquote>
-          </div>
+            <div id="speakeasy">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/speakeasy" target="_blank">speakeasy</a></code></pre>
+              <blockquote>
+                ...a one-time passcode generator, ideal for use in two-factor
+                authentication
+              </blockquote>
+            </div>
 
-          <div id="qrcode">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/qrcode" target="_blank">qrcode</a></code></pre>
-            <blockquote>QR code/2d barcode generator</blockquote>
-          </div>
+            <div id="qrcode">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/qrcode" target="_blank">qrcode</a></code></pre>
+              <blockquote>QR code/2d barcode generator</blockquote>
+            </div>
 
-          <div id="haraka">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/Haraka" target="_blank">haraka</a></code></pre>
-            <blockquote>
-              ...a highly scalable node.js email server with a modular plugin
-              architecture
-            </blockquote>
+            <div id="haraka">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/Haraka" target="_blank">haraka</a></code></pre>
+              <blockquote>
+                ...a highly scalable node.js email server with a modular plugin
+                architecture
+              </blockquote>
+            </div>
           </div>
+          <!-- END #package-list -->
         </div>
-        <!-- END #package-list -->
-      </div>
-      <!-- END #favnpm -->
+        <!-- END #favnpm -->
 
-      <hr />
-
-      <!-- VS Code Config -->
-      <div id="vscode-config" class="collapsible">
-        <h2>VS Code Config</h2>
-        <div class="pkgcmds">
-          <hr class="vert-hr" />
-
-          <div id="vscode-extensions" class="collapsible">
-            <h2>Extensions</h2>
-
-            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
-            <blockquote>
-              A basic spell checker that works well with camelCase code.
-            </blockquote>
-
-            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
-            <blockquote>
-              This extension allows matching brackets to be identified with
-              colours.
-            </blockquote>
-
-            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
-            <blockquote>
-              JavaScript and React/Redux snippets in ES7+ with Babel plugin
-              features for VS Code.
-            </blockquote>
-
-            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
-            <blockquote>Prettier is an opinionated code formatter.</blockquote>
-
-            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
-            <blockquote>
-              This allows you to open the current file in your default browser
-              or application.
-            </blockquote>
-          </div>
-        </div>
-      </div>
-      <!-- END #vscode-config -->
-
-      <div id="purgatory" style="display: none !important" tabindex="-1">
         <hr />
 
-        <div id="node" class="collapsible">
-          <h2>Node.js</h2>
-          <div class="pkgheader">
-            <pre><code class="md md-link"><a href="https://nodejs.org/en/" target="_blank">nodejs.org</a></code></pre>
-            <blockquote>
-              ...asynchronous event-driven JavaScript runtime, designed to build
-              scalable network applications.
-            </blockquote>
-          </div>
-
+        <!-- VS Code Config -->
+        <div id="vscode-config" class="collapsible">
+          <h2>VS Code Config</h2>
           <div class="pkgcmds">
             <hr class="vert-hr" />
-            <h3>Built-in Modules</h3>
 
-            <pre><code class="js">const http = require('http');</code></pre>
-            <blockquote>Create an HTTP server in node</blockquote>
+            <div id="vscode-extensions" class="collapsible">
+              <h2>Extensions</h2>
+
+              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
+              <blockquote>
+                A basic spell checker that works well with camelCase code.
+              </blockquote>
+
+              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
+              <blockquote>
+                This extension allows matching brackets to be identified with
+                colours.
+              </blockquote>
+
+              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
+              <blockquote>
+                JavaScript and React/Redux snippets in ES7+ with Babel plugin
+                features for VS Code.
+              </blockquote>
+
+              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
+              <blockquote>
+                Prettier is an opinionated code formatter.
+              </blockquote>
+
+              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
+              <blockquote>
+                This allows you to open the current file in your default browser
+                or application.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <!-- END #vscode-config -->
+
+        <div id="purgatory" style="display: none !important" tabindex="-1">
+          <hr />
+
+          <div id="node" class="collapsible">
+            <h2>Node.js</h2>
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://nodejs.org/en/" target="_blank">nodejs.org</a></code></pre>
+              <blockquote>
+                ...asynchronous event-driven JavaScript runtime, designed to
+                build scalable network applications.
+              </blockquote>
+            </div>
+
             <div class="pkgcmds">
               <hr class="vert-hr" />
+              <h3>Built-in Modules</h3>
 
-              <pre><code class="js">var http = require('http');
+              <pre><code class="js">const http = require('http');</code></pre>
+              <blockquote>Create an HTTP server in node</blockquote>
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <pre><code class="js">var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write('Hello World!');
   res.end();
 }).listen(8080);</code></pre>
+                <blockquote>
+                  Basic server example <br />
+                  <a
+                    href="https://www.w3schools.com/nodejs/ref_http.asp"
+                    target="_blank"
+                    >(from w3 schools)</a
+                  >
+                </blockquote>
+                <p class="notice">
+                  Usually use express to create the server & manage routes,
+                  instead of this built in module.
+                </p>
+              </div>
+
+              <pre><code class="js">const path = require('path');</code></pre>
               <blockquote>
-                Basic server example <br />
-                <a
-                  href="https://www.w3schools.com/nodejs/ref_http.asp"
-                  target="_blank"
-                  >(from w3 schools)</a
-                >
+                The Path module provides a way of working with directories and
+                file paths.
+                <br />
+                Methods include:
+              </blockquote>
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <pre><code class="js">path.join()</code></pre>
+                <blockquote>
+                  The path.join() method joins the specified path segments into
+                  one path.
+                </blockquote>
+
+                <pre><code class="js">path.dirname()</code></pre>
+                <blockquote>
+                  The path.dirname() method returns the directories of a file
+                  path.
+                </blockquote>
+              </div>
+
+              <pre><code class="js">const fs = require('fs');</code></pre>
+              <blockquote>
+                The File System module provides a way of working with the
+                computer's file system.
+                <br />
+                Methods include:
+              </blockquote>
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <pre><code class="js">mkdir() || mkdirSync()</code></pre>
+                <blockquote>Makes a new directory // sync version</blockquote>
+              </div>
+            </div>
+            <!-- END pkgcmds -->
+          </div>
+          <!-- END node -->
+
+          <hr />
+
+          <div id="npm" class="collapsible">
+            <h2>NPM</h2>
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://www.npmjs.com" target="_blank">npmjs.com</a></code></pre>
+              <blockquote>
+                ...the default package manager for the JavaScript runtime
+                environment Node.js
               </blockquote>
               <p class="notice">
-                Usually use express to create the server & manage routes,
-                instead of this built in module.
+                npm is distributed with Node.js- when you download Node.js, you
+                automatically get npm installed on your computer.
               </p>
             </div>
 
-            <pre><code class="js">const path = require('path');</code></pre>
-            <blockquote>
-              The Path module provides a way of working with directories and
-              file paths.
-              <br />
-              Methods include:
-            </blockquote>
             <div class="pkgcmds">
               <hr class="vert-hr" />
-
-              <pre><code class="js">path.join()</code></pre>
-              <blockquote>
-                The path.join() method joins the specified path segments into
-                one path.
-              </blockquote>
-
-              <pre><code class="js">path.dirname()</code></pre>
-              <blockquote>
-                The path.dirname() method returns the directories of a file
-                path.
-              </blockquote>
             </div>
-
-            <pre><code class="js">const fs = require('fs');</code></pre>
-            <blockquote>
-              The File System module provides a way of working with the
-              computer's file system.
-              <br />
-              Methods include:
-            </blockquote>
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-
-              <pre><code class="js">mkdir() || mkdirSync()</code></pre>
-              <blockquote>Makes a new directory // sync version</blockquote>
-            </div>
+            <!-- END pkgcmds -->
           </div>
-          <!-- END pkgcmds -->
-        </div>
-        <!-- END node -->
+          <!-- END node -->
+          <hr />
 
-        <hr />
+          <hr />
 
-        <div id="npm" class="collapsible">
-          <h2>NPM</h2>
-          <div class="pkgheader">
-            <pre><code class="md md-link"><a href="https://www.npmjs.com" target="_blank">npmjs.com</a></code></pre>
+          <div id="favorites" class="collapsible">
+            <h2>Favorites</h2>
+
+            <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
+            <blockquote>Syntax highlighting for the Web.</blockquote>
+
+            <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
             <blockquote>
-              ...the default package manager for the JavaScript runtime
-              environment Node.js
+              Making the web more beautiful, fast, and open through great
+              typography.
+            </blockquote>
+            <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
+            <blockquote>
+              Elegant, responsive, flexible and lightweight notification plugin
+              with no dependencies. by Marcelo Dolza.
+            </blockquote>
+          </div>
+
+          <hr />
+
+          <div id="react" class="collapsible">
+            <h2>React</h2>
+            <div class="pkgheader">
+              <pre><code class="md md-link"><a href="https://reactjs.org/" target="_blank">react</a></code></pre>
+              <blockquote>
+                ...a JavaScript library for creating user interfaces.
+              </blockquote>
+            </div>
+
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
+
+              <strike>
+                <pre><code class="md md-link"><a href="#" target="_blank">create-react-app</a></code></pre>
+              </strike>
+              <blockquote>
+                Create React apps with no build configuration.
+              </blockquote>
+              <p class="notice" style="padding-bottom: 20px">
+                ! You no longer need to install this package !<br />
+                Create a new react app with:<br /><br />
+                <code style="padding: 5px">npx create-react-app</code>
+              </p>
+
+              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
+              <blockquote>
+                ...a collection of navigational components that compose
+                declaratively with your application.<br />
+                (DOM Version, React-Native applications only require
+                react-router)
+              </blockquote>
+            </div>
+            <!-- END pkgcmds -->
+          </div>
+          <!-- END react -->
+
+          <hr />
+
+          <hr />
+
+          <div id="wamp" class="collapsible">
+            <h2>WAMP</h2>
+            <p>Windows/Apache/MySQL/PHP</p>
+
+            <pre><code class="md md-link"><a href="https://bitnami.com/stack/wamp" target="_blank" >Bitnami WAMP</a></code></pre>
+            <blockquote>
+              ...a complete, fully-integrated and ready to run WAMP development
+              environment. Also includes phpMyAdmin.
             </blockquote>
             <p class="notice">
-              npm is distributed with Node.js- when you download Node.js, you
-              automatically get npm installed on your computer.
+              Use Bitnami WAMP Stack Manager Tool for status<br /><br />
+              Apache server port 80<br />
+              MySQL DB on port 3306
             </p>
           </div>
 
-          <div class="pkgcmds">
-            <hr class="vert-hr" />
-          </div>
-          <!-- END pkgcmds -->
-        </div>
-        <!-- END node -->
-        <hr />
-
-        <hr />
-
-        <div id="favorites" class="collapsible">
-          <h2>Favorites</h2>
-
-          <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
-          <blockquote>Syntax highlighting for the Web.</blockquote>
-
-          <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
-          <blockquote>
-            Making the web more beautiful, fast, and open through great
-            typography.
-          </blockquote>
-          <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
-          <blockquote>
-            Elegant, responsive, flexible and lightweight notification plugin
-            with no dependencies. by Marcelo Dolza.
-          </blockquote>
-        </div>
-
-        <hr />
-
-        <div id="react" class="collapsible">
-          <h2>React</h2>
-          <div class="pkgheader">
-            <pre><code class="md md-link"><a href="https://reactjs.org/" target="_blank">react</a></code></pre>
-            <blockquote>
-              ...a JavaScript library for creating user interfaces.
-            </blockquote>
-          </div>
-
-          <div class="pkgcmds">
-            <hr class="vert-hr" />
-
-            <strike>
-              <pre><code class="md md-link"><a href="#" target="_blank">create-react-app</a></code></pre>
-            </strike>
-            <blockquote>
-              Create React apps with no build configuration.
-            </blockquote>
-            <p class="notice" style="padding-bottom: 20px">
-              ! You no longer need to install this package !<br />
-              Create a new react app with:<br /><br />
-              <code style="padding: 5px">npx create-react-app</code>
-            </p>
-
-            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
-            <blockquote>
-              ...a collection of navigational components that compose
-              declaratively with your application.<br />
-              (DOM Version, React-Native applications only require react-router)
-            </blockquote>
-          </div>
-          <!-- END pkgcmds -->
-        </div>
-        <!-- END react -->
-
-        <hr />
-
-        <hr />
-
-        <div id="wamp" class="collapsible">
-          <h2>WAMP</h2>
-          <p>Windows/Apache/MySQL/PHP</p>
-
-          <pre><code class="md md-link"><a href="https://bitnami.com/stack/wamp" target="_blank" >Bitnami WAMP</a></code></pre>
-          <blockquote>
-            ...a complete, fully-integrated and ready to run WAMP development
-            environment. Also includes phpMyAdmin.
-          </blockquote>
-          <p class="notice">
-            Use Bitnami WAMP Stack Manager Tool for status<br /><br />
-            Apache server port 80<br />
-            MySQL DB on port 3306
-          </p>
-        </div>
-
-        <!-- PACKAGE TEMPLATE -->
-        <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
+          <!-- PACKAGE TEMPLATE -->
+          <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
         <BLOCKQUOTE>
           What package does<br />
           <strong style="background-color: rgb(255, 255, 191);">Important package note</strong>
         </BLOCKQUOTE>
       -->
-        <!-- END PACKAGE TEMPLATE -->
+          <!-- END PACKAGE TEMPLATE -->
 
-        <hr />
+          <hr />
 
-        <div id="codeExamples" class="collapsible">
-          <h2>Code Examples</h2>
+          <div id="codeExamples" class="collapsible">
+            <h2>Code Examples</h2>
 
-          <div id="html">
-            <div class="pkgheader">
-              <h2>HTML</h2>
-            </div>
+            <div id="html">
+              <div class="pkgheader">
+                <h2>HTML</h2>
+              </div>
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
 
-              <h3>HTML Template</h3>
-              <pre><code class="html">&lt;!DOCTYPE html&gt;
+                <h3>HTML Template</h3>
+                <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8" /&gt;
@@ -970,50 +982,50 @@ http.createServer(function (req, res) {
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-              <blockquote></blockquote>
-            </div>
-          </div>
-
-          <div id="css">
-            <div class="pkgheader">
-              <h2>CSS</h2>
+                <blockquote></blockquote>
+              </div>
             </div>
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-              <h3>Global Reset</h3>
-              <pre><code class="css">* {
+            <div id="css">
+              <div class="pkgheader">
+                <h2>CSS</h2>
+              </div>
+
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+                <h3>Global Reset</h3>
+                <pre><code class="css">* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;              
 }</code></pre>
-              <blockquote></blockquote>
+                <blockquote></blockquote>
 
-              <h3>Media Query</h3>
-              <pre><code class="css">@media AND screen (max-width: 300px) {
+                <h3>Media Query</h3>
+                <pre><code class="css">@media AND screen (max-width: 300px) {
  // rule here
 }</code></pre>
-              <blockquote></blockquote>
-            </div>
-          </div>
-
-          <!-- javascript -->
-          <div id="javascript">
-            <div class="pkgheader">
-              <h2>JavaScript</h2>
+                <blockquote></blockquote>
+              </div>
             </div>
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
+            <!-- javascript -->
+            <div id="javascript">
+              <div class="pkgheader">
+                <h2>JavaScript</h2>
+              </div>
 
-              <h3>Declaring a variable</h3>
-              <pre><code class="js">var var1 = "Hello";
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <h3>Declaring a variable</h3>
+                <pre><code class="js">var var1 = "Hello";
 let var2 = "JavaScript";
 const var3 = "World!";</code></pre>
 
-              <h3>Data Structures</h3>
-              <pre><code class="js">// String;
+                <h3>Data Structures</h3>
+                <pre><code class="js">// String;
 const myString = "Hello World";
 
 // Number;
@@ -1038,8 +1050,8 @@ const myArray = ["hello", [1, 2, 3], {name: "Paul"}, 12.311];
 const myObject = {name: "Paul"};
 </code></pre>
 
-              <h3>Functions</h3>
-              <pre><code class="js">function regularFunction(num1, num2) {
+                <h3>Functions</h3>
+                <pre><code class="js">function regularFunction(num1, num2) {
   return num1 + num2;
 }
 
@@ -1055,24 +1067,25 @@ const arrowFunction = (num1, num2) => {
 
 // one param, one return
 num1 => num1 * 5</code></pre>
+              </div>
+              <!-- END examples -->
             </div>
-            <!-- END examples -->
-          </div>
-          <!-- END javascript -->
+            <!-- END javascript -->
 
-          <div id="reactexamples">
-            <div class="pkgheader">
-              <h2>React</h2>
-            </div>
+            <div id="reactexamples">
+              <div class="pkgheader">
+                <h2>React</h2>
+              </div>
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
 
-              <h3>Heading 3</h3>
-              <pre><code class="css">const myFunc = () => {
+                <h3>Heading 3</h3>
+                <pre><code class="css">const myFunc = () => {
   console.log("Code examples here")              
 }</code></pre>
-              <blockquote>This is a blockquote</blockquote>
+                <blockquote>This is a blockquote</blockquote>
+              </div>
             </div>
           </div>
         </div>
