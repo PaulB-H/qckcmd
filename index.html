@@ -430,6 +430,66 @@ server {
 	
 }</code></pre>
                 <br />
+
+                <h3>Server Block with proxy pass</h3>
+                <p class="notice">
+                  With this configuration, requests for
+                  'www.mydomain.com/server1' will serve whatever is running on
+                  localhost:5000, whereas 'www.mydomain.com/server2' will serve
+                  localhost:6000
+                </p>
+
+                <p class="notice">
+                  This is a good example for how you can have multiple Node.js
+                  servers running, on a single VPS, even under a single domain.
+                </p>
+
+                <pre><code class="md">server {
+  server_name mydomain.com www.mydomain.com;
+
+  # Below managed by Certbot
+  listen 443 ssl;
+  ssl_certificate /etc/letsencrypt/live/www.mydomain.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/www.mydomain.com/privkey.pem;
+  include /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+  location /server1  {
+    proxy_pass    http://localhost:5000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+
+  location /server2  {
+    proxy_pass    http://localhost:6000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+  }
+
+}
+server {
+  if ($host = www.mydomain.com) {
+    return 301 https://$host$request_uri;
+  } # managed by Certbot
+
+  if ($host = mydomain.com) {
+    return 301 https://$host$request_uri;
+  } # managed by Certbot
+
+  listen 80;
+  server_name mydomain.com www.mydomain.com;
+  return 404; # managed by Certbot
+
+}</code></pre>
+
+                <br />
+                <h3>Creating symbolic link</h3>
                 <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
                 <blockquote>
                   Create symbolic link from specified file into dir at:<br />
@@ -441,6 +501,7 @@ server {
                   again.
                 </blockquote>
 
+                <h3>Other commands:</h3>
                 <pre><code class="md">sudo systemctl restart nginx</code></pre>
                 <blockquote>Restart NGINX</blockquote>
               </div>
