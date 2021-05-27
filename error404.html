@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qckcmd 404</title>
+    <style>
+      body {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>404</h1>
+    <div>
+      File<br />
+      Not<br />
+      Found
+    </div>
+    <p>Re-directing in <span id="counter">4</span> seconds</p>
+    <script>
+      const counter = document.getElementById("counter");
+      let count = 4;
+
+      const myInterval = window.setInterval(() => {
+        count--;
+        counter.innerText = count;
+      }, 1000);
+
+      const myTimer = window.setTimeout(() => {
+        window.location.replace("https://www.qckcmd.com");
+      }, 4000);
+    </script>
+  </body>
+</html>
