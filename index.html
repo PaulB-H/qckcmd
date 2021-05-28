@@ -840,6 +840,41 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
             </div>
           </div>
           <!-- END #package-list -->
+
+          <div id="sorting" class="collapsible">
+            <h3>Sorting the above section ...</h3>
+              <h3>
+                ... Easier than doing it manually, and I can just keep adding packages at the end like this
+              </h3>
+              <pre><code>const sortPackageList = () => {
+  const packages = document.getElementById("package-list");
+  let len = packages.children.length;
+  let IDarr = [];
+  let packageArr = [];
+
+  for (let i = 0; i < len; i++) {
+    IDarr.push(packages.children[i].id);
+    packageArr.push(packages.children[i]);
+  }
+  IDarr.sort();
+
+  let sortedElems = [];
+  IDarr.forEach((id) => {
+    packageArr.forEach((elem) => {
+      if (elem.id === id) {
+        sortedElems.push(elem);
+      }
+    });
+  });
+
+  packages.innerHTML = "";
+  sortedElems.forEach((item) =>
+    packages.insertAdjacentElement("beforeend", item)
+  );
+};</code></pre>
+            </div>
+          </div>
+          <!-- END sorting example -->
         </div>
         <!-- END #favnpm -->
 
