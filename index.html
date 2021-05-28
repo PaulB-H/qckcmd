@@ -517,6 +517,59 @@ server {
 
             <hr />
 
+            <div id="pm2" class="collapsible">
+              <h2>PM2</h2>
+              <div class="pkgheader">
+                <pre><code class="md md-link"><a href="https://www.npmjs.com/package/pm2" target="_blank">PM2 on NPM</a></code></pre>
+                <blockquote>
+                  PM2 is a production process manager for Node.js applications
+                  with a built-in load balancer.
+                </blockquote>
+              </div>
+
+              <div class="pkgcmds">
+                <hr class="vert-hr" />
+
+                <h3>Commands</h3>
+                <br />
+
+                <pre><code class="md">pm2 start FILENAME.js --name APPNAME --watch</code></pre>
+                <blockquote>Start, daemonize and monitor an app</blockquote>
+                <p class="notice">
+                  --name flag lets you set a custom name other than the filename
+                  for the app in PM2
+                </p>
+                <p class="notice">
+                  --watch flag restarts app when files change, much like nodemon
+                </p>
+
+                <pre><code class="md">pm2 startup</code></pre>
+                <blockquote>
+                  Generates a startup script, so PM2 can auto start after
+                  machine reboot
+                </blockquote>
+                <p class="notice">
+                  This was the only command I had to run, the PM2 site indicates
+                  this command should return ANOTHER command you need to run
+                  with sudo, but this was not the case for me.
+                </p>
+                <p class="notice">
+                  This could be because I was running the command from root
+                  account however
+                </p>
+
+                <pre><code class="md">pm2 save</code></pre>
+                <blockquote>
+                  Saves all currently running processes to the startup script,
+                  they will now be restarted automatically upon machine reboot
+                </blockquote>
+              </div>
+              <!-- END pkgcmds -->
+            </div>
+            <!-- END pm2 -->
+
+            <hr />
+
             <div id="unattended-upgrades" class="collapsible">
               <h2>unattended-upgrades</h2>
               <div class="pkgheader">
