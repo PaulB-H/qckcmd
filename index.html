@@ -505,6 +505,17 @@ server {
 
 }</code></pre>
 
+                <h3>Return 444 (no response) for root IP</h3>
+                <p class="notice">
+                  This will cause direct requests for the server's IP to close the connection without a response
+                </p>
+
+                <pre><code class="md">server {
+  listen 80;
+  server_name SERVER.IP.ADDRESS;
+  return 444;
+}</code></pre>
+
                 <br />
                 <h3>Creating symbolic link</h3>
                 <pre><code class="md">ln -s /etc/nginx/sites-available/mydomain.ca /etc/nginx/sites-enabled/</code></pre>
