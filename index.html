@@ -352,7 +352,7 @@ e - manually edit the current hunk
 
         <!-- Ubuntu Server Config w/NGINX -->
         <div id="server-config" class="collapsible">
-          <h2>Server Management</h2>
+          <h2>Server Admin</h2>
           <div class="pkgcmds">
             <hr class="vert-hr" />
 
@@ -582,7 +582,7 @@ server {
             <hr />
 
             <div id="unattended-upgrades" class="collapsible">
-              <h2>unattended-upgrades</h2>
+              <h3>Auto upgrade</h2>
               <div class="pkgheader">
                 <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
                 <blockquote>Link to docs</blockquote>
@@ -607,7 +607,7 @@ server {
             <hr />
 
             <div id="ufw" class="collapsible">
-              <h2>Uncomplicated Firewall</h2>
+              <h2>UFW</h2>
 
               <div class="pkgheader">
                 <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/UFW" target="_blank" >help.ubuntu.com/community/UFW</a></code></pre>
@@ -842,10 +842,10 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
           <!-- END #package-list -->
 
           <div id="sorting" class="collapsible">
-            <h3>Sorting the above section ...</h3>
-              <h3>
-                ... Easier than doing it manually, and I can just keep adding packages at the end like this
-              </h3>
+            <h4>Sorting the above...</h4>
+              <h4>
+                ...This was easier than doing it manually, and allows me to keep appending packages without thinking about order.
+              </h4>
               <pre><code>const sortPackageList = () => {
   const packages = document.getElementById("package-list");
   let len = packages.children.length;
