@@ -529,6 +529,12 @@ server {
                   again.
                 </blockquote>
 
+                <h3>Remember to allow NGINX through UFW</h3>
+                <pre><code class="md">ufw allow "Nginx Full"</code></pre>
+                <blockquote>
+                  Allows NGINX port 80-http & 443-https
+                </blockquote>
+
                 <h3>Other commands:</h3>
                 <pre><code class="md">sudo systemctl restart nginx</code></pre>
                 <blockquote>Restart NGINX</blockquote>
