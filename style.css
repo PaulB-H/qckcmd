@@ -100,6 +100,6 @@ BLOCKQUOTE {
   margin-left: 0 !important;
 }
 
-.pkgheader blockquote {
-  padding-left: 0.5em;
+blockquote {
+  padding-left: 0.6em;
 }
