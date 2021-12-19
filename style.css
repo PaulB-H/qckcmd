@@ -94,3 +94,12 @@ BLOCKQUOTE {
   padding: 5px;
   border-radius: 3px;
 }
+
+.pkgheader pre,
+.pkgheader blockquote {
+  margin-left: 0 !important;
+}
+
+.pkgheader blockquote {
+  padding-left: 0.5em;
+}
