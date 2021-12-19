@@ -507,7 +507,8 @@ server {
 
                 <h3>Return 444 (no response) for root IP</h3>
                 <p class="notice">
-                  This will cause direct requests for the server's IP to close the connection without a response
+                  This will cause direct requests for the server's IP to close
+                  the connection without a response
                 </p>
 
                 <pre><code class="md">server {
@@ -531,9 +532,7 @@ server {
 
                 <h3>Remember to allow NGINX through UFW</h3>
                 <pre><code class="md">ufw allow "Nginx Full"</code></pre>
-                <blockquote>
-                  Allows NGINX port 80-http & 443-https
-                </blockquote>
+                <blockquote>Allows NGINX port 80-http & 443-https</blockquote>
 
                 <h3>Other commands:</h3>
                 <pre><code class="md">sudo systemctl restart nginx</code></pre>
@@ -599,7 +598,7 @@ server {
             <hr />
 
             <div id="unattended-upgrades" class="collapsible">
-              <h3>Auto upgrade</h2>
+              <h2>Auto upgrade</h2>
               <div class="pkgheader">
                 <pre><code class="md md-link"><a href="https://help.ubuntu.com/community/AutomaticSecurityUpdates" target="_blank" >help.ubuntu.com/community/AutomaticSecurityUpdates</a></code></pre>
                 <blockquote>Link to docs</blockquote>
@@ -860,10 +859,11 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
 
           <div id="sorting" class="collapsible">
             <h4>Sorting the above...</h4>
-              <h4>
-                ...This was easier than doing it manually, and allows me to keep appending packages without thinking about order.
-              </h4>
-              <pre><code>const sortPackageList = () => {
+            <h4>
+              ...This was easier than doing it manually, and allows me to keep
+              appending packages without thinking about order.
+            </h4>
+            <pre><code>const sortPackageList = () => {
   const packages = document.getElementById("package-list");
   let len = packages.children.length;
   let IDarr = [];
@@ -889,264 +889,261 @@ app.listen(5000, () => console.log(`Server started on port ${5000}`));
     packages.insertAdjacentElement("beforeend", item)
   );
 };</code></pre>
-            </div>
           </div>
-          <!-- END sorting example -->
         </div>
-        <!-- END #favnpm -->
+        <!-- END sorting example -->
+      </div>
+      <!-- END #favnpm -->
 
+      <hr />
+
+      <!-- VS Code Config -->
+      <div id="vscode-config" class="collapsible">
+        <h2>VS Code Config</h2>
+        <div class="pkgcmds">
+          <hr class="vert-hr" />
+
+          <div id="vscode-extensions" class="collapsible">
+            <h2>Extensions</h2>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
+            <blockquote>
+              A basic spell checker that works well with camelCase code.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
+            <blockquote>
+              This extension allows matching brackets to be identified with
+              colours.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
+            <blockquote>
+              JavaScript and React/Redux snippets in ES7+ with Babel plugin
+              features for VS Code.
+            </blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
+            <blockquote>Prettier is an opinionated code formatter.</blockquote>
+
+            <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
+            <blockquote>
+              This allows you to open the current file in your default browser
+              or application.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- END #vscode-config -->
+
+      <div id="purgatory" style="display: none !important" tabindex="-1">
         <hr />
 
-        <!-- VS Code Config -->
-        <div id="vscode-config" class="collapsible">
-          <h2>VS Code Config</h2>
+        <div id="node" class="collapsible">
+          <h2>Node.js</h2>
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://nodejs.org/en/" target="_blank">nodejs.org</a></code></pre>
+            <blockquote>
+              ...asynchronous event-driven JavaScript runtime, designed to build
+              scalable network applications.
+            </blockquote>
+          </div>
+
           <div class="pkgcmds">
             <hr class="vert-hr" />
+            <h3>Built-in Modules</h3>
 
-            <div id="vscode-extensions" class="collapsible">
-              <h2>Extensions</h2>
-
-              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" >Spell Checker</a></code></pre>
-              <blockquote>
-                A basic spell checker that works well with camelCase code.
-              </blockquote>
-
-              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2" target="_blank" >Bracket Pair Colorizer 2</a></code></pre>
-              <blockquote>
-                This extension allows matching brackets to be identified with
-                colours.
-              </blockquote>
-
-              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets" target="_blank" >ES7 React/Redux/GraphQL/React-Native snippets</a></code></pre>
-              <blockquote>
-                JavaScript and React/Redux snippets in ES7+ with Babel plugin
-                features for VS Code.
-              </blockquote>
-
-              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" >Prettier</a></code></pre>
-              <blockquote>
-                Prettier is an opinionated code formatter.
-              </blockquote>
-
-              <pre><code class="md md-link"><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" >open in browser</a></code></pre>
-              <blockquote>
-                This allows you to open the current file in your default browser
-                or application.
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <!-- END #vscode-config -->
-
-        <div id="purgatory" style="display: none !important" tabindex="-1">
-          <hr />
-
-          <div id="node" class="collapsible">
-            <h2>Node.js</h2>
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://nodejs.org/en/" target="_blank">nodejs.org</a></code></pre>
-              <blockquote>
-                ...asynchronous event-driven JavaScript runtime, designed to
-                build scalable network applications.
-              </blockquote>
-            </div>
-
+            <pre><code class="js">const http = require('http');</code></pre>
+            <blockquote>Create an HTTP server in node</blockquote>
             <div class="pkgcmds">
               <hr class="vert-hr" />
-              <h3>Built-in Modules</h3>
 
-              <pre><code class="js">const http = require('http');</code></pre>
-              <blockquote>Create an HTTP server in node</blockquote>
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
-
-                <pre><code class="js">var http = require('http');
+              <pre><code class="js">var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write('Hello World!');
   res.end();
 }).listen(8080);</code></pre>
-                <blockquote>
-                  Basic server example <br />
-                  <a
-                    href="https://www.w3schools.com/nodejs/ref_http.asp"
-                    target="_blank"
-                    >(from w3 schools)</a
-                  >
-                </blockquote>
-                <p class="notice">
-                  Usually use express to create the server & manage routes,
-                  instead of this built in module.
-                </p>
-              </div>
-
-              <pre><code class="js">const path = require('path');</code></pre>
               <blockquote>
-                The Path module provides a way of working with directories and
-                file paths.
-                <br />
-                Methods include:
-              </blockquote>
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
-
-                <pre><code class="js">path.join()</code></pre>
-                <blockquote>
-                  The path.join() method joins the specified path segments into
-                  one path.
-                </blockquote>
-
-                <pre><code class="js">path.dirname()</code></pre>
-                <blockquote>
-                  The path.dirname() method returns the directories of a file
-                  path.
-                </blockquote>
-              </div>
-
-              <pre><code class="js">const fs = require('fs');</code></pre>
-              <blockquote>
-                The File System module provides a way of working with the
-                computer's file system.
-                <br />
-                Methods include:
-              </blockquote>
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
-
-                <pre><code class="js">mkdir() || mkdirSync()</code></pre>
-                <blockquote>Makes a new directory // sync version</blockquote>
-              </div>
-            </div>
-            <!-- END pkgcmds -->
-          </div>
-          <!-- END node -->
-
-          <hr />
-
-          <div id="npm" class="collapsible">
-            <h2>NPM</h2>
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://www.npmjs.com" target="_blank">npmjs.com</a></code></pre>
-              <blockquote>
-                ...the default package manager for the JavaScript runtime
-                environment Node.js
+                Basic server example <br />
+                <a
+                  href="https://www.w3schools.com/nodejs/ref_http.asp"
+                  target="_blank"
+                  >(from w3 schools)</a
+                >
               </blockquote>
               <p class="notice">
-                npm is distributed with Node.js- when you download Node.js, you
-                automatically get npm installed on your computer.
+                Usually use express to create the server & manage routes,
+                instead of this built in module.
               </p>
             </div>
 
-            <div class="pkgcmds">
-              <hr class="vert-hr" />
-            </div>
-            <!-- END pkgcmds -->
-          </div>
-          <!-- END node -->
-          <hr />
-
-          <hr />
-
-          <div id="favorites" class="collapsible">
-            <h2>Favorites</h2>
-
-            <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
-            <blockquote>Syntax highlighting for the Web.</blockquote>
-
-            <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
+            <pre><code class="js">const path = require('path');</code></pre>
             <blockquote>
-              Making the web more beautiful, fast, and open through great
-              typography.
+              The Path module provides a way of working with directories and
+              file paths.
+              <br />
+              Methods include:
             </blockquote>
-            <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
-            <blockquote>
-              Elegant, responsive, flexible and lightweight notification plugin
-              with no dependencies. by Marcelo Dolza.
-            </blockquote>
-          </div>
-
-          <hr />
-
-          <div id="react" class="collapsible">
-            <h2>React</h2>
-            <div class="pkgheader">
-              <pre><code class="md md-link"><a href="https://reactjs.org/" target="_blank">react</a></code></pre>
-              <blockquote>
-                ...a JavaScript library for creating user interfaces.
-              </blockquote>
-            </div>
-
             <div class="pkgcmds">
               <hr class="vert-hr" />
 
-              <strike>
-                <pre><code class="md md-link"><a href="#" target="_blank">create-react-app</a></code></pre>
-              </strike>
+              <pre><code class="js">path.join()</code></pre>
               <blockquote>
-                Create React apps with no build configuration.
+                The path.join() method joins the specified path segments into
+                one path.
               </blockquote>
-              <p class="notice" style="padding-bottom: 20px">
-                ! You no longer need to install this package !<br />
-                Create a new react app with:<br /><br />
-                <code style="padding: 5px">npx create-react-app</code>
-              </p>
 
-              <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
+              <pre><code class="js">path.dirname()</code></pre>
               <blockquote>
-                ...a collection of navigational components that compose
-                declaratively with your application.<br />
-                (DOM Version, React-Native applications only require
-                react-router)
+                The path.dirname() method returns the directories of a file
+                path.
               </blockquote>
             </div>
-            <!-- END pkgcmds -->
-          </div>
-          <!-- END react -->
 
-          <hr />
-
-          <hr />
-
-          <div id="wamp" class="collapsible">
-            <h2>WAMP</h2>
-            <p>Windows/Apache/MySQL/PHP</p>
-
-            <pre><code class="md md-link"><a href="https://bitnami.com/stack/wamp" target="_blank" >Bitnami WAMP</a></code></pre>
+            <pre><code class="js">const fs = require('fs');</code></pre>
             <blockquote>
-              ...a complete, fully-integrated and ready to run WAMP development
-              environment. Also includes phpMyAdmin.
+              The File System module provides a way of working with the
+              computer's file system.
+              <br />
+              Methods include:
+            </blockquote>
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
+
+              <pre><code class="js">mkdir() || mkdirSync()</code></pre>
+              <blockquote>Makes a new directory // sync version</blockquote>
+            </div>
+          </div>
+          <!-- END pkgcmds -->
+        </div>
+        <!-- END node -->
+
+        <hr />
+
+        <div id="npm" class="collapsible">
+          <h2>NPM</h2>
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://www.npmjs.com" target="_blank">npmjs.com</a></code></pre>
+            <blockquote>
+              ...the default package manager for the JavaScript runtime
+              environment Node.js
             </blockquote>
             <p class="notice">
-              Use Bitnami WAMP Stack Manager Tool for status<br /><br />
-              Apache server port 80<br />
-              MySQL DB on port 3306
+              npm is distributed with Node.js- when you download Node.js, you
+              automatically get npm installed on your computer.
             </p>
           </div>
 
-          <!-- PACKAGE TEMPLATE -->
-          <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+          </div>
+          <!-- END pkgcmds -->
+        </div>
+        <!-- END node -->
+        <hr />
+
+        <hr />
+
+        <div id="favorites" class="collapsible">
+          <h2>Favorites</h2>
+
+          <pre><code class="md md-link"><a href="https://highlightjs.org/" target="_blank" >highlight.js</a></code></pre>
+          <blockquote>Syntax highlighting for the Web.</blockquote>
+
+          <pre><code class="md md-link"><a href="https://fonts.google.com/" target="_blank" >Google Fonts</a></code></pre>
+          <blockquote>
+            Making the web more beautiful, fast, and open through great
+            typography.
+          </blockquote>
+          <pre><code class="md md-link"><a href="https://izitoast.marcelodolza.com/" target="_blank" >IZITOAST</a></code></pre>
+          <blockquote>
+            Elegant, responsive, flexible and lightweight notification plugin
+            with no dependencies. by Marcelo Dolza.
+          </blockquote>
+        </div>
+
+        <hr />
+
+        <div id="react" class="collapsible">
+          <h2>React</h2>
+          <div class="pkgheader">
+            <pre><code class="md md-link"><a href="https://reactjs.org/" target="_blank">react</a></code></pre>
+            <blockquote>
+              ...a JavaScript library for creating user interfaces.
+            </blockquote>
+          </div>
+
+          <div class="pkgcmds">
+            <hr class="vert-hr" />
+
+            <strike>
+              <pre><code class="md md-link"><a href="#" target="_blank">create-react-app</a></code></pre>
+            </strike>
+            <blockquote>
+              Create React apps with no build configuration.
+            </blockquote>
+            <p class="notice" style="padding-bottom: 20px">
+              ! You no longer need to install this package !<br />
+              Create a new react app with:<br /><br />
+              <code style="padding: 5px">npx create-react-app</code>
+            </p>
+
+            <pre><code class="md md-link"><a href="https://www.npmjs.com/package/react-router-dom" target="_blank">react-router-dom</a></code></pre>
+            <blockquote>
+              ...a collection of navigational components that compose
+              declaratively with your application.<br />
+              (DOM Version, React-Native applications only require react-router)
+            </blockquote>
+          </div>
+          <!-- END pkgcmds -->
+        </div>
+        <!-- END react -->
+
+        <hr />
+
+        <hr />
+
+        <div id="wamp" class="collapsible">
+          <h2>WAMP</h2>
+          <p>Windows/Apache/MySQL/PHP</p>
+
+          <pre><code class="md md-link"><a href="https://bitnami.com/stack/wamp" target="_blank" >Bitnami WAMP</a></code></pre>
+          <blockquote>
+            ...a complete, fully-integrated and ready to run WAMP development
+            environment. Also includes phpMyAdmin.
+          </blockquote>
+          <p class="notice">
+            Use Bitnami WAMP Stack Manager Tool for status<br /><br />
+            Apache server port 80<br />
+            MySQL DB on port 3306
+          </p>
+        </div>
+
+        <!-- PACKAGE TEMPLATE -->
+        <!-- <pre><code class="md" style="background: darkgray !important;"><a href="#" target="_blank" >Link to package</a></code></pre>
         <BLOCKQUOTE>
           What package does<br />
           <strong style="background-color: rgb(255, 255, 191);">Important package note</strong>
         </BLOCKQUOTE>
       -->
-          <!-- END PACKAGE TEMPLATE -->
+        <!-- END PACKAGE TEMPLATE -->
 
-          <hr />
+        <hr />
 
-          <div id="codeExamples" class="collapsible">
-            <h2>Code Examples</h2>
+        <div id="codeExamples" class="collapsible">
+          <h2>Code Examples</h2>
 
-            <div id="html">
-              <div class="pkgheader">
-                <h2>HTML</h2>
-              </div>
+          <div id="html">
+            <div class="pkgheader">
+              <h2>HTML</h2>
+            </div>
 
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
 
-                <h3>HTML Template</h3>
-                <pre><code class="html">&lt;!DOCTYPE html&gt;
+              <h3>HTML Template</h3>
+              <pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="UTF-8" /&gt;
@@ -1161,50 +1158,50 @@ http.createServer(function (req, res) {
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-                <blockquote></blockquote>
-              </div>
+              <blockquote></blockquote>
+            </div>
+          </div>
+
+          <div id="css">
+            <div class="pkgheader">
+              <h2>CSS</h2>
             </div>
 
-            <div id="css">
-              <div class="pkgheader">
-                <h2>CSS</h2>
-              </div>
-
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
-                <h3>Global Reset</h3>
-                <pre><code class="css">* {
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
+              <h3>Global Reset</h3>
+              <pre><code class="css">* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;              
 }</code></pre>
-                <blockquote></blockquote>
+              <blockquote></blockquote>
 
-                <h3>Media Query</h3>
-                <pre><code class="css">@media AND screen (max-width: 300px) {
+              <h3>Media Query</h3>
+              <pre><code class="css">@media AND screen (max-width: 300px) {
  // rule here
 }</code></pre>
-                <blockquote></blockquote>
-              </div>
+              <blockquote></blockquote>
+            </div>
+          </div>
+
+          <!-- javascript -->
+          <div id="javascript">
+            <div class="pkgheader">
+              <h2>JavaScript</h2>
             </div>
 
-            <!-- javascript -->
-            <div id="javascript">
-              <div class="pkgheader">
-                <h2>JavaScript</h2>
-              </div>
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
 
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
-
-                <h3>Declaring a variable</h3>
-                <pre><code class="js">var var1 = "Hello";
+              <h3>Declaring a variable</h3>
+              <pre><code class="js">var var1 = "Hello";
 let var2 = "JavaScript";
 const var3 = "World!";</code></pre>
 
-                <h3>Data Structures</h3>
-                <pre><code class="js">// String;
+              <h3>Data Structures</h3>
+              <pre><code class="js">// String;
 const myString = "Hello World";
 
 // Number;
@@ -1229,8 +1226,8 @@ const myArray = ["hello", [1, 2, 3], {name: "Paul"}, 12.311];
 const myObject = {name: "Paul"};
 </code></pre>
 
-                <h3>Functions</h3>
-                <pre><code class="js">function regularFunction(num1, num2) {
+              <h3>Functions</h3>
+              <pre><code class="js">function regularFunction(num1, num2) {
   return num1 + num2;
 }
 
@@ -1246,25 +1243,24 @@ const arrowFunction = (num1, num2) => {
 
 // one param, one return
 num1 => num1 * 5</code></pre>
-              </div>
-              <!-- END examples -->
             </div>
-            <!-- END javascript -->
+            <!-- END examples -->
+          </div>
+          <!-- END javascript -->
 
-            <div id="reactexamples">
-              <div class="pkgheader">
-                <h2>React</h2>
-              </div>
+          <div id="reactexamples">
+            <div class="pkgheader">
+              <h2>React</h2>
+            </div>
 
-              <div class="pkgcmds">
-                <hr class="vert-hr" />
+            <div class="pkgcmds">
+              <hr class="vert-hr" />
 
-                <h3>Heading 3</h3>
-                <pre><code class="css">const myFunc = () => {
+              <h3>Heading 3</h3>
+              <pre><code class="css">const myFunc = () => {
   console.log("Code examples here")              
 }</code></pre>
-                <blockquote>This is a blockquote</blockquote>
-              </div>
+              <blockquote>This is a blockquote</blockquote>
             </div>
           </div>
         </div>
