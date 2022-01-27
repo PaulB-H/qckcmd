@@ -7,8 +7,9 @@
 
 <hr />
 
-<h3><a href="https://www.qckcmd.com" target="_blank">
-Live site - www.qckcmd.com
-</a></h3>
+<sub>Down to rebuild...</sub>
+<strike><h3><a href="#">
+Live site - 
+</a></h3></strike>
 
 <hr />
