@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+body {
+  margin: 10px;
+  max-width: 600px;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Because h1 inside <section> is smaller than normal */
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px 0 5px 0;
+}
+
+p {
+  padding: 3px;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 5px 2px;
+}
+
+a {
+  color: #75bfff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 1px solid #75bfff;
+}
+a:visited {
+  color: #b98eff;
+  border-color: #b98eff;
+}
+
+.collapse {
+  overflow: hidden;
+  user-select: none;
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
+.collapse > .collapse {
+  margin-left: 30px;
+}
+.collapse > *:not(h1, h2, h3) {
+  margin-left: 15px;
+}
+
+/* To highlight parent containers */
+/* .collapse:hover {
+  background-color: rgb(0, 0, 109);
+} */
+/* If highlight parent containers, change color rgb(0, 0, 204) */
+.collapse > *:not(ul, div, section):hover {
+  background-color: rgb(0, 0, 109);
+}
+.collapse > * > *:not(ul, div):hover {
+  background-color: rgb(0, 0, 109);
+}

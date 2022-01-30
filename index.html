@@ -5,41 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>qckcmd</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: black;
-        color: white;
-        font-family: sans-serif;
-      }
-      .collapse {
-        overflow: hidden;
-        user-select: none;
-        background-color: black;
-        transition: background-color 0.3s;
-        height: max-content;
-      }
-      .collapse:hover {
-        background-color: darkblue;
-      }
-
-      .collapse > .collapse {
-        margin-left: 30px;
-      }
-      .collapse p {
-        margin-left: 25px;
-      }
-
-      h1,
-      h3 {
-        padding: 5px 0;
-        margin-left: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Highlight.js -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
   </head>
   <body>
     <p style="margin: 10px">
@@ -47,157 +25,185 @@
     </p>
 
     <div class="collapse">
-      <h1>Root 1</h1>
+      <h1>
+        <span class="toggleIco">&nbsp;&#5167;</span>
+        Study
+      </h1>
 
       <div class="collapse">
-        <h3>Level 1 header</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-          perferendis? Possimus dignissimos illo officia cum obcaecati magni
-          dolor commodi, voluptates repellendus odit ea quidem eum reiciendis
-          maxime. Officiis, eaque fugiat.
-        </p>
+        <h3>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          Udemy Courses
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.udemy.com/course/modern-react-front-to-back/"
+              target="_blank"
+            >
+              React Front to Back
+            </a>
+          </li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
       </div>
 
       <div class="collapse">
-        <h3>Level 1 header</h3>
+        <h3>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          Databases
+        </h3>
+        <ul>
+          <li>
+            <a href="https://university.mongodb.com/" target="_blank">
+              university.mongodb.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.postgresqltutorial.com/" target="_blank">
+              postgresqltutorial.com
+            </a>
+          </li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </div>
+
+      <div class="collapse">
+        <h3>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          DS/Algo
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=t2CEgPsws3U"
+              target="_blank"
+            >
+              FreeCodeCamp - DS & Algos in JS
+            </a>
+          </li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </div>
+
+      <div class="collapse">
+        <h3>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          Testing
+        </h3>
+        <ul>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </div>
+
+      <div class="collapse">
+        <h3>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          System Design
+        </h3>
+
+        <ul>
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
 
         <div class="collapse">
-          <h3>Level 2 header</h3>
+          <h3>
+            <span class="toggleIco">&nbsp;&#5167;</span>
+            API Design
+          </h3>
+          <ul>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="collapse">
+      <h1>
+        <span class="toggleIco">&nbsp;&#5167;</span>
+        Level 1 heading
+      </h1>
+
+      <div class="collapse">
+        <h2>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          Level 2 heading
+        </h2>
+
+        <div class="collapse">
+          <h3>
+            <span class="toggleIco">&nbsp;&#5167;</span>
+            Level 3 heading
+          </h3>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            perferendis? Possimus dignissimos illo officia cum obcaecati magni
-            dolor commodi, voluptates repellendus odit ea quidem eum reiciendis
-            maxime. Officiis, eaque fugiat.
+            This is a block of text before another nested collapsable. I would
+            use this space to describe the following content, voluptate
+            consequuntur ad expedita praesentium ratione amet explicabo placeat
+            vero? Ut perspiciatis quisquam sequi.
           </p>
-        </div>
 
-        <div class="collapse">
-          <h3>Level 2 header</h3>
+          <p>
+            And another one... amet consectetur adipisicing elit. Rerum nobis
+            numquam id blanditiis dicta natus voluptatem sint molestiae nostrum
+            quos cum incidunt maiores eum consequatur minus nam, ipsa
+            accusantium distinctio!
+          </p>
 
           <div class="collapse">
-            <h3>Level 3 header</h3>
+            <h3>
+              <span class="toggleIco">&nbsp;&#5167;</span>
+              Level 4 heading
+            </h3>
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              corporis illum ex corrupti sed vel sit expedita sapiente neque ea!
-              Aut ducimus minus dolores praesentium sit recusandae non itaque a.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et
+              amet, hic assumenda reprehenderit optio, doloremque eligendi esse
+              corrupti animi est alias rerum fugit minus illo officia nostrum
+              omnis mollitia.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              asperiores assumenda. Recusandae, magni itaque explicabo, fuga
+              placeat minus vero eveniet atque ab distinctio dolorum ea
+              consequatur neque debitis quibusdam libero.
             </p>
           </div>
 
           <div class="collapse">
-            <h3>Level 3 header</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              corporis illum ex corrupti sed vel sit expedita sapiente neque ea!
-              Aut ducimus minus dolores praesentium sit recusandae non itaque a.
-            </p>
-          </div>
+            <h3>
+              <span class="toggleIco">&nbsp;&#5167;</span>
+              Level 4 heading
+            </h3>
 
-          <div class="collapse">
-            <h3>Level 3 header</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              corporis illum ex corrupti sed vel sit expedita sapiente neque ea!
-              Aut ducimus minus dolores praesentium sit recusandae non itaque a.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi et
+              amet, hic assumenda reprehenderit optio, doloremque eligendi esse
+              corrupti animi est alias rerum fugit minus illo officia nostrum
+              omnis mollitia.
             </p>
-          </div>
 
-          <div class="collapse">
-            <h3>Level 3 header</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              corporis illum ex corrupti sed vel sit expedita sapiente neque ea!
-              Aut ducimus minus dolores praesentium sit recusandae non itaque a.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              asperiores assumenda. Recusandae, magni itaque explicabo, fuga
+              placeat minus vero eveniet atque ab distinctio dolorum ea
+              consequatur neque debitis quibusdam libero.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="collapse">
-      <h1>Root 2</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
-        voluptatem necessitatibus fugiat sint repellat officiis dicta laboriosam
-        tenetur recusandae numquam, ipsam a quia cupiditate blanditiis nesciunt
-        labore voluptates quas autem!
-      </p>
-    </div>
-
-    <script>
-      console.log("Hello world");
-
-      const collapseAll = () => {
-        document.querySelectorAll(".collapse").forEach((item) => {
-          item.style.height = `${item.firstElementChild.clientHeight}px`;
-        });
-      };
-
-      collapseAll();
-
-      const toggleSection = (e) => {
-        const parentElem = e.currentTarget.parentElement;
-
-        let sectionHeight = e.currentTarget.parentElement.clientHeight;
-
-        const headerHeight = e.currentTarget.clientHeight;
-
-        if (sectionHeight === headerHeight) {
-          // We need to know what the full height of the section would
-          // be when expanded, so we create a deep clone, set overflow visible, remove
-          // the fixed height, append it to the body (so it gets a calculable height)
-          // then delete it. This all happens without any visible change!
-          const clone = parentElem.cloneNode(true);
-          Object.assign(clone.style, {
-            overflow: "visible",
-            height: "",
-          });
-          document.querySelector("body").appendChild(clone);
-          const elemFullHeight = clone.clientHeight;
-          clone.remove();
-
-          // This was incorrect because the section height
-          // when the section is collapsed is not what I want to be dividing
-          // instead we want to use elemFullHeight, obtained from the clone
-          // const expandRate = sectionHeight / 5;
-          const expandRate = elemFullHeight / 10;
-
-          const expandInterv = window.setInterval(() => {
-            console.log("interval");
-            if (sectionHeight < elemFullHeight) {
-              parentElem.style.height = `${sectionHeight + expandRate}px`;
-              sectionHeight += expandRate;
-
-              if (parentElem.clientHeight >= elemFullHeight) {
-                // We need to remove the fixed height at the end
-                // so the default style on the .collapse class height: max-content
-                // can take over, and will adjust for any expanded children
-                parentElem.style.height = "";
-              }
-            } else {
-              clearInterval(expandInterv);
-            }
-          }, 1);
-        } else {
-          const shrinkRate = sectionHeight / 10;
-          const collapseInterv = window.setInterval(() => {
-            if (sectionHeight > headerHeight) {
-              parentElem.style.height = `${sectionHeight - shrinkRate}px`;
-              sectionHeight -= shrinkRate;
-
-              if (sectionHeight < headerHeight) {
-                parentElem.style.height = `${headerHeight}px`;
-              }
-            } else {
-              clearInterval(collapseInterv);
-            }
-          }, 1);
-        }
-      };
-
-      document.querySelectorAll(".collapse").forEach((item) => {
-        item.firstElementChild.addEventListener("click", toggleSection);
-      });
-    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
