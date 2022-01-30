@@ -9,6 +9,8 @@ window.onload = (e) => {
 
   collapseAll();
 
+  document.querySelector("body").style.visibility = "visible";
+
   const toggleSection = (e) => {
     const parentElem = e.currentTarget.parentElement;
 
