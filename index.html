@@ -24,8 +24,12 @@
       Testing new nested-collapsable functionality, animated with JS
     </p>
 
-    <button onclick="collapseAll()"><p>Collapse All</p></button>
-    <button onclick="expandAll()"><p>Expand All</p></button>
+    <div id="expandShrinkBtnWrap">
+      <button class="shrink" onclick="collapseAll()">
+        <p>Collapse All</p>
+      </button>
+      <button class="expand" onclick="expandAll()"><p>Expand All</p></button>
+    </div>
 
     <div class="collapse">
       <h1>
