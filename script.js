@@ -8,6 +8,14 @@ const collapseAll = () => {
   });
 };
 
+const expandAll = () => {
+  document.querySelectorAll(".collapse").forEach((item) => {
+    if (item.clientHeight === item.firstElementChild.clientHeight) {
+      item.firstElementChild.click();
+    }
+  });
+};
+
 const toggleSection = (e) => {
   const parentElem = e.currentTarget.parentElement;
 

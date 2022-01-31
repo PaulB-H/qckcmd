@@ -22,7 +22,7 @@ h1 {
 h1,
 h2,
 h3 {
-  padding: 10px 0 5px 0;
+  padding: 5px 0;
 }
 
 p {
@@ -45,6 +45,20 @@ a {
 a:visited {
   color: #b98eff;
   border-color: #b98eff;
+}
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  font-size: large;
+}
+button:active {
+  background-color: darkgray;
+  margin: 0;
+  padding: 10px;
 }
 
 .collapse {
