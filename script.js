@@ -1,5 +1,9 @@
 console.log("Hello world");
 
+hljs.highlightAll();
+
+hljs.initLineNumbersOnLoad();
+
 const collapseAll = () => {
   document.querySelectorAll(".collapse").forEach((item) => {
     if (item.clientHeight !== item.firstElementChild.clientHeight) {

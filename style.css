@@ -95,9 +95,18 @@ button.shrink:hover {
   background-color: rgb(0, 0, 109);
 } */
 /* If highlight parent containers, change color rgb(0, 0, 204) */
-.collapse > *:not(ul, div, section):hover {
+.collapse > *:not(ul, div, section, pre, code):hover {
   background-color: rgb(0, 0, 109);
 }
-.collapse > * > *:not(ul, div):hover {
+.collapse > * > *:not(ul, div, pre, code):hover {
   background-color: rgb(0, 0, 109);
+}
+
+.hljs-ln-n {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+code > * {
+  font-family: "Fira Mono", sans-serif;
 }

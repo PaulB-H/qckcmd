@@ -11,20 +11,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <!-- Highlight.js -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css"
     />
   </head>
   <body>
-    <p style="margin: 10px">qckcmd.com</p>
-    <p style="margin: 10px">
-      A <a href="https://github.com/paulb-h">personal</a> resource collection.
-    </p>
+    <header>
+      <p style="margin: 10px">qckcmd.com</p>
+      <p style="margin: 10px">
+        A
+        <a href="https://github.com/paulb-h" target="_blank">personal</a>
+        resource collection.
+      </p>
+    </header>
 
     <div id="expandShrinkBtnWrap">
       <button class="shrink" onclick="collapseAll()">
@@ -33,7 +37,7 @@
       <button class="expand" onclick="expandAll()"><p>Expand All</p></button>
     </div>
 
-    <div class="collapse">
+    <section id="studyAndReference" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Study & Reference
@@ -211,9 +215,9 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section class="collapse">
+    <section id="cheatsheets" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Cheatsheets
@@ -235,7 +239,7 @@
       </ul>
     </section>
 
-    <section class="collapse">
+    <section id="exampleSection" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Level 1 heading
@@ -314,7 +318,7 @@
       </div>
     </section>
 
-    <section class="collapse">
+    <section id="npmPackages" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         NPM Packages
@@ -322,15 +326,19 @@
       <p>Stuff</p>
     </section>
 
-    <section class="collapse">
+    <section id="hosting" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Hosting
       </h1>
-      <p>Stuff</p>
+
+      <pre><code class="language-javascript">// I am a comment
+console.log("Hello World")
+const myfunc = () => { console.log("I am a function") }</code></pre>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
