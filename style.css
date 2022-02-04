@@ -93,6 +93,12 @@ button.shrink:hover {
   margin-left: 15px;
 }
 
+.toggleIco {
+  font-size: 0.6em;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
 /* To highlight parent containers enable this rule,
 then change the rule below to be a different color
 .collapse:hover {

@@ -30,7 +30,7 @@ const toggleSection = (e) => {
   const closestIco = e.currentTarget.firstElementChild;
 
   if (sectionHeight === headerHeight) {
-    closestIco.innerHTML = "&nbsp;&#5169;";
+    closestIco.innerHTML = "&nbsp;&#11165;";
 
     // closestIco.innerHTML = "&nbsp;&#5169;";
     // We need to know what the full height of the section would
@@ -68,7 +68,7 @@ const toggleSection = (e) => {
       }
     }, 10);
   } else {
-    closestIco.innerHTML = "&nbsp;&#5167;";
+    closestIco.innerHTML = "&nbsp;&#11167;";
 
     const shrinkRate = sectionHeight / 15;
     const collapseInterv = window.setInterval(() => {
