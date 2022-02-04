@@ -275,7 +275,131 @@
       </ul>
     </section>
 
-    <section id="exampleSection" class="collapse">
+    <section id="npmPackages" class="collapse">
+      <h1>
+        <span class="toggleIco">&nbsp;&#5167;</span>
+        NPM Packages
+      </h1>
+      <p>Stuff</p>
+    </section>
+
+    <section id="environment" class="collapse">
+      <h1>
+        <span class="toggleIco">&nbsp;&#5167;</span>
+        Dev Environment
+      </h1>
+
+      <section id="vscode" class="collapse">
+        <h2>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          VS Code
+        </h2>
+
+        <section id="extensions" class="collapse">
+          <h3>
+            <span class="toggleIco">&nbsp;&#5167;</span>
+            Extensions
+          </h3>
+
+          <ul>
+            <li>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                target="_blank"
+              >
+                Prettier - Code formatter
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+                target="_blank"
+              >
+                Code Spell Checker
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets"
+                target="_blank"
+              >
+                ES7+ React/Redux/React-Native/JS Snippets
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="emmet" class="collapse">
+          <h3>
+            <span class="toggleIco">&nbsp;&#5167;</span>
+            Emmet Abbreviations
+          </h3>
+
+          <p>
+            The following settings must be enabled in VS Code settings.json file
+            in order for emmet to work correctly in JSX (mainly for React)
+          </p>
+          <pre><code class="language-json nohljsln">"emmet.includeLanguages": {
+  "\"javascript\"": "\"javascriptreact\""
+},
+"emmet.triggerExpansionOnTab": true,
+"emmet.showSuggestionsAsSnippets": true,
+"files.associations": {
+  "*.js": "javascriptreact"
+},</code></pre>
+        </section>
+      </section>
+      <!-- END #vscode-->
+    </section>
+    <!-- END #environment-->
+
+    <section id="hosting" class="collapse">
+      <h1>
+        <span class="toggleIco">&nbsp;&#5167;</span>
+        Hosting
+      </h1>
+
+      <p>Where to host:</p>
+      <ul>
+        <li><p>GH Pages (Static - Can still host built React apps)</p></li>
+        <li><p>Heroku (PaaS)</p></li>
+        <li><p>VPS (Virtual Private Server)</p></li>
+        <li><p>Cloud (WIP...)</p></li>
+      </ul>
+
+      <p><a href="https://www.linode.com/docs/guides/">Linode Guides</a></p>
+      <p>UBUNTU</p>
+      <ul>
+        <li><p>Core Commands</p></li>
+        <li><p>SSH</p></li>
+        <li><p>UFW</p></li>
+        <li><p>CERTBOT</p></li>
+        <li><p>Fail2Ban</p></li>
+        <li><p>Auto Security Updates</p></li>
+      </ul>
+
+      <p>NGINX</p>
+      <ul>
+        <li><p>Core Commands</p></li>
+        <li><p>Server block config</p></li>
+        <li><p>Link to docs</p></li>
+      </ul>
+
+      <p>PM2</p>
+      <ul>
+        <li><p>Core Commands</p></li>
+        <li><p>Link to docs</p></li>
+      </ul>
+
+      <p>Cloudflare</p>
+      <ul>
+        <li><p>Link to quick start</p></li>
+      </ul>
+    </section>
+
+    <!-- <section id="exampleSection" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Level 1 heading
@@ -352,131 +476,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="npmPackages" class="collapse">
-      <h1>
-        <span class="toggleIco">&nbsp;&#5167;</span>
-        NPM Packages
-      </h1>
-      <p>Stuff</p>
-    </section>
-
-    <section id="hosting" class="collapse">
-      <h1>
-        <span class="toggleIco">&nbsp;&#5167;</span>
-        Hosting
-      </h1>
-
-      <p>Where to host:</p>
-      <ul>
-        <li><p>GH Pages (Static - Can still host built React apps)</p></li>
-        <li><p>Heroku (PaaS)</p></li>
-        <li><p>VPS (Virtual Private Server)</p></li>
-        <li><p>Cloud (WIP...)</p></li>
-      </ul>
-
-      <p><a href="https://www.linode.com/docs/guides/">Linode Guides</a></p>
-      <p>UBUNTU</p>
-      <ul>
-        <li><p>Core Commands</p></li>
-        <li><p>SSH</p></li>
-        <li><p>UFW</p></li>
-        <li><p>CERTBOT</p></li>
-        <li><p>Fail2Ban</p></li>
-        <li><p>Auto Security Updates</p></li>
-      </ul>
-
-      <p>NGINX</p>
-      <ul>
-        <li><p>Core Commands</p></li>
-        <li><p>Server block config</p></li>
-        <li><p>Link to docs</p></li>
-      </ul>
-
-      <p>PM2</p>
-      <ul>
-        <li><p>Core Commands</p></li>
-        <li><p>Link to docs</p></li>
-      </ul>
-
-      <p>Cloudflare</p>
-      <ul>
-        <li><p>Link to quick start</p></li>
-      </ul>
-    </section>
-
-    <section id="environment" class="collapse">
-      <h1>
-        <span class="toggleIco">&nbsp;&#5167;</span>
-        Dev Environment
-      </h1>
-
-      <section id="vscode" class="collapse">
-        <h2>
-          <span class="toggleIco">&nbsp;&#5167;</span>
-          VS Code
-        </h2>
-
-        <section id="extensions" class="collapse">
-          <h3>
-            <span class="toggleIco">&nbsp;&#5167;</span>
-            Extensions
-          </h3>
-
-          <ul>
-            <li>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
-                target="_blank"
-              >
-                Prettier - Code formatter
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
-                target="_blank"
-              >
-                Code Spell Checker
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets"
-                target="_blank"
-              >
-                ES7+ React/Redux/React-Native/JS Snippets
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <section id="emmet" class="collapse">
-          <h3>
-            <span class="toggleIco">&nbsp;&#5167;</span>
-            Emmet Abbreviations
-          </h3>
-
-          <p>
-            The following settings must be enabled in VS Code settings.json file
-            in order for emmet to work correctly in JSX (mainly for React)
-          </p>
-          <pre><code class="language-json nohljsln">"emmet.includeLanguages": {
-  "\"javascript\"": "\"javascriptreact\""
-},
-"emmet.triggerExpansionOnTab": true,
-"emmet.showSuggestionsAsSnippets": true,
-"files.associations": {
-  "*.js": "javascriptreact"
-},</code></pre>
-        </section>
-      </section>
-      <!-- END #vscode-->
-    </section>
-    <!-- END #environment-->
+    </section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
