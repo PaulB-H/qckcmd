@@ -69,7 +69,7 @@ button.expand:active,
 button.expand:hover {
   padding: 5px 15px;
   letter-spacing: 2px;
-  width: 130px;
+  width: 150px;
 }
 button.shrink:active,
 button.shrink:hover {

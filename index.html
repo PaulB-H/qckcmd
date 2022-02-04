@@ -368,6 +368,8 @@
         Hosting
       </h1>
 
+      <a href="https://www.linode.com/docs/guides/">Linode Guides</a>
+
       <p>VPS / Heroku / GH Pages</p>
 
       <p>UBUNTU</p>
@@ -386,23 +388,60 @@
       <p>Cloudflare</p>
     </section>
 
-    <section id="hosting" class="collapse">
+    <section id="environment" class="collapse">
       <h1>
         <span class="toggleIco">&nbsp;&#5167;</span>
         Environment
       </h1>
 
+      <section class="collapse">
+        <h2>
+          <span class="toggleIco">&nbsp;&#5167;</span>
+          VS Code
+        </h2>
+
+        <section class="collapse">
+          <h3>
+            <span class="toggleIco">&nbsp;&#5167;</span>
+            Emmet Abbreviations
+          </h3>
+
+          <p>
+            The following settings must be enabled in VS Code settings.json file
+            in order for emmet to work correctly in JSX (mainly for React)
+          </p>
+          <pre><code class="language-json nohljsln">"emmet.includeLanguages": {
+  "\"javascript\"": "\"javascriptreact\""
+},
+"emmet.triggerExpansionOnTab": true,
+"emmet.showSuggestionsAsSnippets": true,
+"files.associations": {
+  "*.js": "javascriptreact"
+},
+          </code></pre>
+        </section>
+      </section>
+
       <p>VS Code</p>
       <ul>
         <li>>- Extensions</li>
-        <li>>- Emmet-HTML-in-JS</li>
-        <li>>- Integrated Terminal</li>
+        <ul>
+          <li>Prettier</li>
+          <li>ES7 React/Redux/GraphQL/React-Native snippets</li>
+          <li>Code Spell Checker</li>
+        </ul>
+
+        <ul>
+          <li>List the two settings that MUST be enabled for this to work</li>
+        </ul>
+        <li>>- Select Integrated Terminal / Font</li>
       </ul>
 
       <p>Windows Stuff</p>
       <ul>
         <li>>-BumpTop</li>
         <li>>-FreeCommander</li>
+        <li>>-Chocolatey</li>
       </ul>
     </section>
 
