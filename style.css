@@ -90,15 +90,13 @@ button.shrink:hover {
   margin-left: 15px;
 }
 
-/* To highlight parent containers */
-/* .collapse:hover {
+/* To highlight parent containers enable this rule,
+then change the rule below to be a different color
+.collapse:hover {
   background-color: rgb(0, 0, 109);
 } */
-/* If highlight parent containers, change color rgb(0, 0, 204) */
-.collapse > *:not(ul, div, section, pre, code):hover {
-  background-color: rgb(0, 0, 109);
-}
-.collapse > * > *:not(ul, div, pre, code):hover {
+
+*:not(html, body, div, section, button, button > p, ul, code, pre):hover {
   background-color: rgb(0, 0, 109);
 }
 
