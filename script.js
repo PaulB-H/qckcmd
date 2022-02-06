@@ -100,11 +100,11 @@ window.onload = (e) => {
   document.querySelector("body").style.visibility = "visible";
 };
 
-// Force collapse all on window resize
-window.addEventListener("resize", () => {
-  document.querySelectorAll(".collapse").forEach((section) => {
-    const icon = section.firstElementChild.firstElementChild;
-    section.style.height = `${section.firstElementChild.clientHeight}px`;
-    icon.outerHTML = `<i class="ri-arrow-down-s-line toggleIco"></i>`;
-  });
-});
+// // Force collapse all on window resize
+// window.addEventListener("resize", () => {
+//   document.querySelectorAll(".collapse").forEach((section) => {
+//     const icon = section.firstElementChild.firstElementChild;
+//     section.style.height = `${section.firstElementChild.clientHeight}px`;
+//     icon.outerHTML = `<i class="ri-arrow-down-s-line toggleIco"></i>`;
+//   });
+// });
