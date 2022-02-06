@@ -48,7 +48,7 @@ ul {
 }
 li {
   padding: 2px;
-  margin: 2px;
+  margin: 5px;
 }
 
 a {
@@ -109,6 +109,7 @@ button.shrink:hover {
   font-size: 0.6em;
   vertical-align: middle;
   padding-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* To highlight parent containers enable this rule,
