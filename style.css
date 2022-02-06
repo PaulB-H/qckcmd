@@ -109,7 +109,7 @@ button.shrink:hover {
   font-size: 0.6em;
   vertical-align: middle;
   padding-bottom: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  filter: invert(1);
 }
 
 /* To highlight parent containers enable this rule,
@@ -119,7 +119,7 @@ then change the rule below to be a different color
 } */
 
 *:not(html, body, main, footer, div, section, button, button
-    > p, ul, code, pre):hover {
+    > p, ul, code, pre, img):hover {
   background-color: rgb(0, 0, 109);
 }
 

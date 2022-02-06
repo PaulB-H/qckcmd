@@ -9,7 +9,9 @@
 
 <sub>Down to rebuild...</sub>
 <strike><h3><a href="#">
-Live site - 
+Live site -
 </a></h3></strike>
 
 <hr />
+
+<p>Arrows from <a href="https://remixicon.com/" target="_blank">RemixIcon</a></p>
