@@ -101,7 +101,7 @@ button.shrink:hover {
 }
 
 .collapse > .collapse {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 .collapse > *:not(h1, h2, h3) {
   margin-left: 15px;
