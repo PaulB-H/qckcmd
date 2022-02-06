@@ -5,13 +5,26 @@
   transition: all 0.2s;
 }
 
+html {
+  height: 100%;
+}
 body {
-  margin: 10px;
+  position: relative;
+  min-height: 100%;
+  margin: auto;
   max-width: 600px;
   background-color: black;
   color: white;
   font-family: "Open Sans", sans-serif;
   visibility: hidden;
+}
+main {
+  padding-bottom: 52px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
 }
 
 /* Because h1 inside <section> is smaller than normal */
@@ -28,7 +41,6 @@ h3 {
 
 p {
   padding: 2px;
-  margin: 2px;
 }
 
 ul {
@@ -105,7 +117,8 @@ then change the rule below to be a different color
   background-color: rgb(0, 0, 109);
 } */
 
-*:not(html, body, div, section, button, button > p, ul, code, pre):hover {
+*:not(html, body, main, footer, div, section, button, button
+    > p, ul, code, pre):hover {
   background-color: rgb(0, 0, 109);
 }
 
