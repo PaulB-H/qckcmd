@@ -31,8 +31,8 @@ const toggleSection = (e) => {
 
   if (sectionHeight <= headerHeight) {
     // Expand sections, show collapse icon
-    // closestIco.innerHTML = "&nbsp;&#11165;";
-    closestIco.outerHTML = `<img class="toggleIco" src="./images/arrow-up.png" alt="">`;
+    // closestIco.innerHTML = "&nbsp;&#11165;"; This HTML entity not working on mobile...
+    closestIco.outerHTML = `<i class="ri-arrow-up-s-line toggleIco"></i>`;
 
     // closestIco.innerHTML = "&nbsp;&#5169;";
     // We need to know what the full height of the section would
@@ -71,8 +71,8 @@ const toggleSection = (e) => {
     }, 10);
   } else {
     // Collapse sections, show expand icon
-    // closestIco.innerHTML = "&nbsp;&#11167;";
-    closestIco.outerHTML = `<img class="toggleIco" src="./images/arrow-down.png" alt="">`;
+    // closestIco.innerHTML = "&nbsp;&#11167;"; This HTML entity not working on mobile...
+    closestIco.outerHTML = `<i class="ri-arrow-down-s-line toggleIco"></i>`;
 
     const shrinkRate = sectionHeight / 15;
     const collapseInterv = window.setInterval(() => {

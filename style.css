@@ -37,6 +37,8 @@ h2,
 h3 {
   padding: 2px 0;
   margin: 2px 0;
+  display: flex;
+  align-items: center;
 }
 
 p {
@@ -106,10 +108,8 @@ button.shrink:hover {
 }
 
 .toggleIco {
-  font-size: 0.6em;
-  vertical-align: middle;
-  padding-bottom: 5px;
-  filter: invert(1);
+  font-size: 0.8em;
+  margin-right: 5px;
 }
 
 /* To highlight parent containers enable this rule,
