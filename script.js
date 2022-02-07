@@ -1,9 +1,5 @@
 console.log("Hello world");
 
-hljs.highlightAll();
-
-hljs.initLineNumbersOnLoad();
-
 const collapseAll = () => {
   document.querySelectorAll(".collapse").forEach((item) => {
     if (item.clientHeight !== item.firstElementChild.clientHeight) {
@@ -91,11 +87,20 @@ const toggleSection = (e) => {
 };
 
 window.onload = (e) => {
+  hljs.highlightAll();
+
+  hljs.initLineNumbersOnLoad();
+
   document.querySelectorAll(".collapse").forEach((item) => {
     item.firstElementChild.addEventListener("click", toggleSection);
   });
 
-  collapseAll();
+  // Collapse all without animation / simulating click event...
+  document.querySelectorAll(".collapse").forEach((section) => {
+    const icon = section.firstElementChild.firstElementChild;
+    section.style.height = `${section.firstElementChild.clientHeight}px`;
+    icon.outerHTML = `<i class="ri-arrow-down-s-line toggleIco"></i>`;
+  });
 
   document.querySelector("body").style.visibility = "visible";
 };
